@@ -1,0 +1,13 @@
+// Servlet - html to servlet
+String accountNumber = request.getParameter("accountnumber");
+			
+// in HTML 
+(String) request.getAttribut("")
+
+// FROM SQL
+result.getString("");
+
+// Sending info 
+RequestDispatcher rd = request.getRequestDispatcher("confirmcustomerbuy.jsp");
+request.setAttribute("trasactionid", transactionID);
+rd.forward(request, response);

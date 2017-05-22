@@ -1,0 +1,83 @@
+from flask import Flask, current_app, request, render_template, url_for, Response
+from flask_restful import Resource, Api
+from werkzeug.utils import secure_filename
+from cassandra.cluster import Cluster
+import os
+import magic
+import json
+from flask import send_file
+import base64
+
+UPLOAD_FOLDER = '/root/hw4/hw4env/restapi/deposits'
+app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['MAX_CONTENT_LENGTH'] = 735344
+api = Api(app)
+
+
+#/deposit { filename: (type=text), contents: (type=file) }
+class Deposit(Resource):
+	# save image on cassandra
+	def post(self):
+		try:
+			# name use to identify file by user
+			userfname = request.form['filename']
+			file = request.files['contents']
+			filename = userfname
+			path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+			file.save(path)
+			fpath = UPLOAD_FOLDER + "/" + filename
+			f = open(fpath, "rb")
+			fbytes = bytearray(f.read())
+			f.close()
+			imgt = magic.Magic(mime=True).from_file(path)
+			cluster = Cluster()
+                        session = cluster.connect('hw4_')
+			session.execute("INSERT INTO imgs_ (filename_, contents_, imgtype_) VALUES (%s, %s, %s)",
+				(userfname, fbytes, imgt)
+			)
+			return {"status": "success"}
+		except Exception as e:
+			return {"status": "failure", "errmsg": e}
+	# render static page (allow users to submit images)
+	def get(self):
+		return current_app.send_static_file('index.html')
+
+
+# /retrieve { filename: }
+class Retrieve(Resource):
+	def get(self):
+		try:
+			fname_ = request.args["filename"]
+			cluster = Cluster()
+			session = cluster.connect("hw4_")
+			r = session.execute("SELECT * FROM imgs_ WHERE filename_=%s", (fname_,))
+			contents = r[0].contents_
+			imgtype = r[0].imgtype_
+			#contents = unicode(contents, errors='replace')
+			
+			return (contents, 200, {'Content-Type': "image/jpeg"})
+		except Exception as e:
+			return {"status": "failure", "errmsg":e}
+
+
+
+class Image(Resource):
+	def get(self):
+		resp = Response()
+		fname = request.args["filename"]
+		mtype = "image/png"
+		if fname.endswith("jpg"):
+			mtype="image/jpg"
+		return send_file(UPLOAD_FOLDER + "/" + request.args["filename"], mimetype=mtype)
+
+api.add_resource(Deposit, '/deposit')
+api.add_resource(Retrieve, '/retrieve')
+#api.add_resource(Image, '/retrieve')
+#if __name__ == '__main__':
+#    app.run(debug=True)
+#/retrieve { filename:}
+
+
+
+

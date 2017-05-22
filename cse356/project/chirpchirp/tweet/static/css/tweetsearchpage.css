@@ -1,0 +1,18 @@
+/* Set black background color, white text and some padding */
+footer {
+	background-color: #555;
+	color: white;
+	padding: 5px;
+	text-align: center;
+	position: fixed;
+	bottom:0px;
+	width:100%;
+}
+
+.tweetListContainer{
+	margin-bottom: 80px;
+}
+
+ul {
+	list-style: none;
+}

@@ -1,0 +1,29 @@
+@CHARSET "ISO-8859-1";
+
+ #trigger-button{
+	font-family: Patua One;
+	font-size: 12pt;
+	text-decoration: none;
+	padding: 10px;
+	color: white;
+	border-radius: 10px;
+	background-color: rgba(51,51,51,.8);
+}
+
+#trigger-button:hover{
+	font-family: Patua One;
+	font-size: 12pt;
+	text-decoration: none;
+	padding: 10px;
+	color: white;
+	border-radius: 10px;
+	background-color: rgba(0,175,94,.9);
+}
+
+.trigger-container h1{
+	font-family: Patua One;
+	font-size: 20pt;
+	text-decoration: none;
+	color: rgba(51,51,51,0.9);
+	border-radius: 10px;
+}

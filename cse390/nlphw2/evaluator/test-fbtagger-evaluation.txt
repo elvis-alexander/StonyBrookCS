@@ -1,0 +1,162 @@
+Accuracy: # correct predictions / # predictions: 0.94209065679926
+
+Precision of tag RB: 0.9619047619047619
+Recall of tag RB: 0.926605504587156
+F1 of tag RB: 0.9439252336448597
+
+Precision of tag ,: 1.0
+Recall of tag ,: 1.0
+F1 of tag ,: 1.0
+
+Precision of tag NNS: 0.9940828402366864
+Recall of tag NNS: 1.0
+F1 of tag NNS: 0.9970326409495549
+
+Precision of tag -NONE-: 1.0
+Recall of tag -NONE-: 1.0
+F1 of tag -NONE-: 1.0
+
+Precision of tag VBD: 0.9939759036144579
+Recall of tag VBD: 0.9428571428571428
+F1 of tag VBD: 0.9677419354838709
+
+Precision of tag IN: 0.9653916211293261
+Recall of tag IN: 0.9906542056074766
+F1 of tag IN: 0.9778597785977861
+
+Precision of tag DT: 0.9907834101382489
+Recall of tag DT: 0.9953703703703703
+F1 of tag DT: 0.9930715935334872
+
+Precision of tag NN: 0.9743589743589743
+Recall of tag NN: 0.9802731411229135
+F1 of tag NN: 0.9773071104387293
+
+Precision of tag POS: 0.9444444444444444
+Recall of tag POS: 1.0
+F1 of tag POS: 0.9714285714285714
+
+Precision of tag JJ: 0.9483870967741935
+Recall of tag JJ: 0.9702970297029703
+F1 of tag JJ: 0.9592169657422512
+
+Precision of tag NNP: 0.9836956521739131
+Recall of tag NNP: 1.0
+F1 of tag NNP: 0.9917808219178083
+
+Precision of tag .: 1.0
+Recall of tag .: 1.0
+F1 of tag .: 1.0
+
+Precision of tag ``: 1.0
+Recall of tag ``: 1.0
+F1 of tag ``: 1.0
+
+Precision of tag PRP: 0.9886363636363636
+Recall of tag PRP: 1.0
+F1 of tag PRP: 0.9942857142857142
+
+Precision of tag VBP: 0.8791208791208791
+Recall of tag VBP: 0.8791208791208791
+F1 of tag VBP: 0.8791208791208791
+
+Precision of tag '': 1.0
+Recall of tag '': 1.0
+F1 of tag '': 1.0
+
+Precision of tag VBZ: 1.0
+Recall of tag VBZ: 0.9696969696969697
+F1 of tag VBZ: 0.9846153846153847
+
+Precision of tag WP: 1.0
+Recall of tag WP: 1.0
+F1 of tag WP: 1.0
+
+Precision of tag VBN: 0.9107142857142857
+Recall of tag VBN: 0.9622641509433962
+F1 of tag VBN: 0.9357798165137615
+
+Precision of tag CC: 0.9913793103448276
+Recall of tag CC: 1.0
+F1 of tag CC: 0.9956709956709957
+
+Precision of tag VBG: 1.0
+Recall of tag VBG: 0.9726027397260274
+F1 of tag VBG: 0.9861111111111112
+
+Precision of tag RP: 0.6923076923076923
+Recall of tag RP: 1.0
+F1 of tag RP: 0.8181818181818181
+
+Precision of tag EX: 1.0
+Recall of tag EX: 1.0
+F1 of tag EX: 1.0
+
+Precision of tag MD: 0.9787234042553191
+Recall of tag MD: 1.0
+F1 of tag MD: 0.989247311827957
+
+Precision of tag VB: 0.9385964912280702
+Recall of tag VB: 0.856
+F1 of tag VB: 0.895397489539749
+
+Precision of tag TO: 0.9911504424778761
+Recall of tag TO: 1.0
+F1 of tag TO: 0.9955555555555555
+
+Precision of tag CD: 1.0
+Recall of tag CD: 0.9933774834437086
+F1 of tag CD: 0.9966777408637874
+
+Precision of tag :: 1.0
+Recall of tag :: 1.0
+F1 of tag :: 1.0
+
+Precision of tag PRP$: 1.0
+Recall of tag PRP$: 0.9705882352941176
+F1 of tag PRP$: 0.9850746268656716
+
+Precision of tag NNPS: 1.0
+Recall of tag NNPS: 0.896551724137931
+F1 of tag NNPS: 0.9454545454545454
+
+Precision of tag JJR: 0.8333333333333334
+Recall of tag JJR: 1.0
+F1 of tag JJR: 0.9090909090909091
+
+Precision of tag -LRB-: 1.0
+Recall of tag -LRB-: 1.0
+F1 of tag -LRB-: 1.0
+
+Precision of tag -RRB-: 1.0
+Recall of tag -RRB-: 1.0
+F1 of tag -RRB-: 1.0
+
+Precision of tag WDT: 1.0
+Recall of tag WDT: 0.48484848484848486
+F1 of tag WDT: 0.653061224489796
+
+Precision of tag WRB: 1.0
+Recall of tag WRB: 1.0
+F1 of tag WRB: 1.0
+
+Precision of tag JJS: 0.9
+Recall of tag JJS: 1.0
+F1 of tag JJS: 0.9473684210526316
+
+Precision of tag RBR: 1.0
+Recall of tag RBR: 0.3333333333333333
+F1 of tag RBR: 0.5
+
+Precision of tag $: 1.0
+Recall of tag $: 1.0
+F1 of tag $: 1.0
+
+Precision of tag WP$: 1.0
+Recall of tag WP$: 1.0
+F1 of tag WP$: 1.0
+
+Precision of tag : 1.0
+Recall of tag : 0.005
+F1 of tag : 0.009950248756218907
+

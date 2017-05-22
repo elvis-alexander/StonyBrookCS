@@ -1,0 +1,47 @@
+
+{
+    "title":"NBA",
+    "name":"Name",
+    "font":"Montserrat",
+    "layout":"template2",
+    "color":"green",
+    "banner":{
+        "src":"./imgs/banner_def.jpg",
+        "coolpath":"imgs//banner_def.jpg",
+        "include":"yes"
+    },
+    "footer":"PLEASE CONTACT ME AT BLAH BLAH BLAH",
+    "components":[
+        {
+            "type":"video",
+            "src":"./vids/samplevid.mp4",
+            "caption":"Look Here! A video",
+            "width":"250",
+            "height":"200",
+            "coolpath":"vids//samplevid.mp4"
+        },
+        {
+            "type":"image",
+            "src":"./imgs/default_ss.png",
+            "caption":"Just A default",
+            "width":"250",
+            "height":"200",
+            "float":"none",
+            "coolpath":"imgs//default_ss.png"
+        }
+    ],
+    "links":[
+        {
+            "src":"ABOUTME",
+            "type":"navbar"
+        },
+        {
+            "src":"NBA",
+            "type":"self"
+        },
+        {
+            "src":"ANOTHERPAGE",
+            "type":"navbar"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+@CHARSET "ISO-8859-1";
+
+submit{
+	font-family: Patua One;
+	font-size: 12pt;
+	text-decoration: none;
+	padding: 10px;
+	color: white;
+	border-radius: 10px;
+	background-color: rgba(51,51,51,.8);
+}

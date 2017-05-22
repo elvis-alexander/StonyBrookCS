@@ -1,0 +1,70 @@
+
+{
+    "title":"ANOTHERPAGE",
+    "name":"Name",
+    "font":"Arvo",
+    "layout":"template1",
+    "color":"gray",
+    "banner":{
+        "src":"./imgs/banner_def.jpg",
+        "coolpath":"imgs//banner_def.jpg",
+        "include":"yes"
+    },
+    "footer":"Footer",
+    "components":[
+        {
+            "type":"paragraph",
+            "text":"Insert Text Here",
+            "font":"Montserrat"
+        },
+        {
+            "type":"paragraph",
+            "text":"Insert Text Here",
+            "font":"Lobster"
+        },
+        {
+            "type":"paragraph",
+            "text":"Insert Text Here",
+            "font":"Merriweather"
+        },
+        {
+            "type":"paragraph",
+            "text":"Insert Text Here",
+            "font":"Oswald"
+        },
+        {
+            "type":"paragraph",
+            "text":"Insert Text Here",
+            "font":"Arvo"
+        },
+        {
+            "type":"list",
+            "font":"Arvo",
+            "listitems":[
+                {
+                    "caption":"New"
+                },
+                {
+                    "caption":"New"
+                },
+                {
+                    "caption":"New"
+                }
+            ]
+        }
+    ],
+    "links":[
+        {
+            "src":"ABOUTME",
+            "type":"navbar"
+        },
+        {
+            "src":"NBA",
+            "type":"navbar"
+        },
+        {
+            "src":"ANOTHERPAGE",
+            "type":"self"
+        }
+    ]
+}

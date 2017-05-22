@@ -1,0 +1,193 @@
+/* Sidebar */
+
+#sidebar-container {
+    z-index: 1;
+    top:0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 200px;
+    overflow-y: hidden;
+    background: rgba(51,51,51,1);
+    opacity: 0.9;
+} 
+
+#logo{
+	width: 200px;
+	height: 120px;
+}
+
+#main-container {
+    position: absolute;
+    width: 80%;
+    padding: 15px;
+    padding-left: 240px;
+}
+
+#heading-container h1{
+	font-family: Patua One;
+	font-size: 24pt;
+ 	color: rgba(51,51,51, 0.9);
+}
+
+#heading-container p{
+	font-family: Patua One;
+	font-size: 24pt;
+ 	color: rgba(51,51,51, 0.9);
+}
+
+#main-container h1{
+	font-family: Patua One;
+	font-size: 24pt;
+ 	color: rgba(51,51,51, 0.9);
+}
+
+#heading-container a{
+	float: right;
+	font-family: Patua One;
+	font-size: 16pt;
+	text-decoration: none;
+	padding: 10px;
+	color: white;
+	background-color: rgba(71,71,71,.8);
+	border-radius: 10px;
+}
+
+#heading-container a:hover{
+	background-color: rgba(0,175,94,.9);
+}
+
+.sidebar-nav {
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+ 	font-family: Patua One;
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.sidebar-nav li a:hover {
+    background: rgba(0,175,94,0.8);
+}
+
+#title-line {
+	border-style: solid; 
+ 	border-color: rgba(51,51,51,1);
+  	border-width: 0 0 3px 0; 
+}
+
+#quote {
+	
+}
+
+#img-quote-container {
+    height: 300px;
+    width: 100%;
+   
+}
+
+#img-quote-container div.col {
+    float: left;
+    width: 50%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: rgba(0,123,203, 0.4);}
+
+tr:nth-child(odd){background-color: rgba(255,255,255,255);}
+
+th {
+	letter-spacing: 2px;
+	font-size: 16pt;
+    background-color: rgba(0,175,94,1);
+    color: #FFFFFF;
+}
+
+#mailing-list {
+	font-family: Patua One;
+	color: rgba(51,51,51, 0.9);
+}
+
+#customer-container {
+    height: 300px;
+    width: 100%;
+   
+}
+
+#customer-container h1{
+	font-family: Patua One;
+	font-size: 12pt;
+	color: rgba(51,51,51, 0.9);
+}
+
+#customer-container a{
+	text-decoration: none
+}
+
+#customer-container div.col {
+    float: left;
+    width: 33%;
+}
+
+#customer-info-container{
+	height: 150px;
+	width: 100%;
+	padding-left: 20px;	
+}
+
+
+#customer-info-container div.col{
+ 	float: left;
+    width: 50%;
+}
+
+#customer-info-container:hover{
+ 	background-color: rgba(0,175,94,0.5);
+ 	border-radius: 30px;
+}
+
+.select-customer{
+	font-family: Patua One;
+	color: white;
+	background-color: rgba(0,175,94,0.9);
+}
+
+
+.hidden{
+	visibility: hidden;
+}
+
+#search-button{
+	float: right;
+	font-family: Patua One;
+	font-size: 12pt;
+	text-decoration: none;
+	padding: 10px;
+	margin-right: 130px;
+	color: white;
+	background-color: rgba(71,71,71,.8);
+	border-radius: 5px;
+	
+	
+}
+
+#search-button{
+	background-color: rgba(0,175,94,.9);
+}

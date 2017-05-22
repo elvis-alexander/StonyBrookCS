@@ -1,0 +1,124 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tweet Search Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/static/js/tweetsearchpage.js" type="text/javascript"></script>
+  <script src="/static/js/tweetsearchitem.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="/static/css/tweetsearchpage.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Tweet</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/profile">Search Users To Follow</a></li>
+      </ul>
+
+      <!-- ==============================================================
+                       NAV BUTTONS
+    ===================================================================== -->
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a><span class="glyphicon glyphicon-user"></span> My Account</a>
+        </li>
+        <li>
+          <a href="#" id="logoutButton"><span class="glyphicon glyphicon-log-in"></span> Log Out</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ==================================================
+      MAIN SEARCH BAR
+=================================================== -->
+<div class="container text-center">
+  <div class="row">
+
+    <!--==================================================
+        SEARCH TWEET ENGINE
+  ========================================================  -->
+    <div class="col-sm-9 ">
+        <form class="navbar-form" method="get" role="search">
+          <h2>Search Tweets Engine</h2>
+          <div class="input-group col-md-10">
+            <input id="searchTimestamp" type="text" class="form-control" placeholder="Timestamp">
+            <input id="searchLimit" type="text" class="form-control" placeholder="Limit">
+            <input id="searchQuery" type="text" class="form-control" placeholder="Query">
+            <input id="searchUsername" type="text" class="form-control" placeholder="Username">
+            <span class="checkLabel">Following &nbsp</span>
+            <input class="checkBox" id="searchFollowing" type="checkbox" class="form-control" placeholder="Following"><br>
+            <span class="checkLabel">Parent &nbsp</span>
+            <input class="checkBox" id="searchParent" type="checkbox" class="form-control" placeholder="Parent"><br>
+            <span class="checkLabel">Replies &nbsp</span>
+            <input class="checkBox" id="searchReplies" type="checkbox" class="form-control" placeholder="Replies"><br>
+          </div>
+          <div class="input-group-btn">
+            <button id="tweetsearchbutton" type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
+          </div>
+        </form>
+    </div>
+
+    <!--==================================================
+        SEARCH BY TWEET ID
+  ========================================================  -->
+    <div class="col-sm-3 well">
+      <form class="navbar-form" method="get" role="search">
+        <h5>Search or Delete Tweet Id</h5>
+        <div class="input-group">
+          <input type="text" class="form-control" id="searchItemField" placeholder="Search">
+          <div class="input-group-btn">
+            <button id="searchItem" type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
+          </div>
+        </div>
+      </form>
+      <br>
+      <ul class="well" id="itemResult">
+      </ul>
+    </div>
+  </div>
+
+  <!--=======================================
+      RESULTS LIST : TWEETS
+====================================  -->
+  <div class="tweetListContainer row">
+    <div class="col-md-12">
+      <div class="wells">
+        <div class="row">
+          <h2 id="resultsHeader">Tweet Results</h2>
+          <ul id="tweetResults">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p id="serverMessage"></p>
+</div>
+
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12">
+            <p>Copyright &copy; Tweet (A Twitter Clone) 2017 by Elvis Fernandez and David Lin</p>
+        </div>
+    </div>
+</footer>
+
+<style>
+  body { padding-top: 70px; }
+</style>
+</body>
+</html>

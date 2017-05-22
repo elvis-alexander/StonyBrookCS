@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="name.css">
+	
+	<title>Eliza</title>
+</head>
+<body>
+
+<div class="container">
+  <h2>Hi, I am Eliza</h2>
+  <p>I am a friendly bot, enter your name to get started</p>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">Eliza Implementation</a></li>
+    <li><a data-toggle="tab" href="#menu2">Early Days</a></li>
+  </ul>
+
+  <div class="tab-content">
+
+  	<!-- home tab -->
+    <div id="home" class="tab-pane fade in active">
+    <h3>Let's Chat</h3>
+	<form class="form-horizontal" action="/eliza" placeholder="name" method="post">
+		<div class="form-group">
+		<label class="control-label col-sm-2" for="name">What's your name? </label>
+		<div class="col-sm-10">
+		<input autocomplete="off" class="form-control" type="text" name="name" placeholder="Enter your name">
+		</div>
+		</div>
+	</form>
+    </div>
+
+    <!-- 2nd tab -->
+    <div id="menu1" class="tab-pane fade">
+      <h3>Here is some info from Wikipedia</h3>
+      <p>ELIZA is an early natural language processing computer program created from 1964 to 1966[1] at the MIT Artificial Intelligence Laboratory by Joseph Weizenbaum.[2] Created to demonstrate the superficiality of communication between man and machine, Eliza simulated conversation by using a 'pattern matching' and substitution methodology that gave users an illusion of understanding on the part of the program, but had no built in framework for contextualizing events.[3] Directives on how to interact were provided by 'scripts', written originally in MAD-Slip, which allowed ELIZA to process user inputs and engage in discourse following the rules and directions of the script. The most famous script, DOCTOR, simulated a Rogerian psychotherapist and used rules, dictated in the script, to respond with non-directional questions to user inputs. As such, ELIZA was one of the first chatterbots, but was also regarded as one of the first programs capable of passing the Turing Test.</p>
+    </div>
+
+    <!-- 3rd tab -->
+    <div id="menu2" class="tab-pane fade">
+      <h3>Early implementation of myself in GNU</h3>
+      <img height="300px" width="400" src="https://upload.wikimedia.org/wikipedia/commons/9/98/GNU_Emacs_ELIZA_example.png">
+    </div>
+
+  </div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    /* nice local configurations */
+    $('input').focus();
+});
+</script>
+
+</div>
+</body>
+</html>
+

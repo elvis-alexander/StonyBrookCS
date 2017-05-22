@@ -1,0 +1,921 @@
+
+<!-- saved from url=(0123)https://blackboard.stonybrook.edu/bbcswebdav/pid-4011875-dt-content-rid-26220622_1/courses/1174-CSE-214-SEC02-42662/hw1.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+			<style type="text/css">@import url('https://themes.googleusercontent.com/fonts/css?kit=lhDjYqiy3mZ0x6ROQEUoUw');ul.lst-kix_ernyvei843j0-7{list-style-type:none}ul.lst-kix_ernyvei843j0-6{list-style-type:none}ul.lst-kix_ernyvei843j0-8{list-style-type:none}.lst-kix_g0muxcwnlshw-6>li:before{content:"\0025cf  "}.lst-kix_g0muxcwnlshw-5>li:before{content:"\0025a0  "}.lst-kix_tqkcwm2pxtcs-1>li:before{content:"\0025cb  "}.lst-kix_tqkcwm2pxtcs-3>li:before{content:"\0025cf  "}.lst-kix_tqkcwm2pxtcs-0>li:before{content:"\0025cf  "}.lst-kix_tqkcwm2pxtcs-4>li:before{content:"\0025cb  "}.lst-kix_jxw9l0x3mo2n-2>li:before{content:"\0025a0  "}.lst-kix_g0muxcwnlshw-7>li:before{content:"\0025cb  "}.lst-kix_g0muxcwnlshw-8>li:before{content:"\0025a0  "}.lst-kix_rmprs9ydx5ce-2>li:before{content:"\0025a0  "}.lst-kix_jxw9l0x3mo2n-1>li:before{content:"\0025cb  "}.lst-kix_tqkcwm2pxtcs-2>li:before{content:"\0025a0  "}.lst-kix_rmprs9ydx5ce-1>li:before{content:"\0025cb  "}.lst-kix_jxw9l0x3mo2n-0>li:before{content:"\0025cf  "}.lst-kix_rmprs9ydx5ce-0>li:before{content:"\0025cf  "}.lst-kix_tqkcwm2pxtcs-7>li:before{content:"\0025cb  "}.lst-kix_tqkcwm2pxtcs-8>li:before{content:"\0025a0  "}.lst-kix_tqkcwm2pxtcs-5>li:before{content:"\0025a0  "}.lst-kix_tqkcwm2pxtcs-6>li:before{content:"\0025cf  "}ul.lst-kix_3hj7vx5mmg85-2{list-style-type:none}ul.lst-kix_3hj7vx5mmg85-3{list-style-type:none}ul.lst-kix_3hj7vx5mmg85-4{list-style-type:none}ul.lst-kix_3hj7vx5mmg85-5{list-style-type:none}ul.lst-kix_3hj7vx5mmg85-0{list-style-type:none}ul.lst-kix_3hj7vx5mmg85-1{list-style-type:none}ul.lst-kix_g0muxcwnlshw-5{list-style-type:none}ul.lst-kix_g0muxcwnlshw-4{list-style-type:none}ul.lst-kix_g0muxcwnlshw-7{list-style-type:none}ul.lst-kix_g0muxcwnlshw-6{list-style-type:none}ul.lst-kix_g0muxcwnlshw-1{list-style-type:none}ul.lst-kix_3hj7vx5mmg85-6{list-style-type:none}ul.lst-kix_g0muxcwnlshw-0{list-style-type:none}ul.lst-kix_3hj7vx5mmg85-7{list-style-type:none}ul.lst-kix_g0muxcwnlshw-3{list-style-type:none}ul.lst-kix_3hj7vx5mmg85-8{list-style-type:none}ul.lst-kix_g0muxcwnlshw-2{list-style-type:none}ul.lst-kix_g0muxcwnlshw-8{list-style-type:none}.lst-kix_rmprs9ydx5ce-3>li:before{content:"\0025cf  "}.lst-kix_rmprs9ydx5ce-4>li:before{content:"\0025cb  "}.lst-kix_jxw9l0x3mo2n-3>li:before{content:"\0025cf  "}.lst-kix_rmprs9ydx5ce-5>li:before{content:"\0025a0  "}.lst-kix_jxw9l0x3mo2n-4>li:before{content:"\0025cb  "}.lst-kix_rmprs9ydx5ce-7>li:before{content:"\0025cb  "}.lst-kix_jxw9l0x3mo2n-5>li:before{content:"\0025a0  "}.lst-kix_abm0vft608vj-2>li:before{content:"\0025a0  "}.lst-kix_rmprs9ydx5ce-8>li:before{content:"\0025a0  "}.lst-kix_abm0vft608vj-1>li:before{content:"\0025cb  "}.lst-kix_rmprs9ydx5ce-6>li:before{content:"\0025cf  "}.lst-kix_3hj7vx5mmg85-1>li:before{content:"\0025cb  "}.lst-kix_jxw9l0x3mo2n-6>li:before{content:"\0025cf  "}.lst-kix_3hj7vx5mmg85-0>li:before{content:"\0025cf  "}.lst-kix_abm0vft608vj-5>li:before{content:"\0025a0  "}.lst-kix_3hj7vx5mmg85-3>li:before{content:"\0025cf  "}.lst-kix_jxw9l0x3mo2n-7>li:before{content:"\0025cb  "}.lst-kix_abm0vft608vj-3>li:before{content:"\0025cf  "}.lst-kix_abm0vft608vj-4>li:before{content:"\0025cb  "}.lst-kix_jxw9l0x3mo2n-8>li:before{content:"\0025a0  "}.lst-kix_3hj7vx5mmg85-2>li:before{content:"\0025a0  "}ul.lst-kix_abm0vft608vj-2{list-style-type:none}ul.lst-kix_abm0vft608vj-1{list-style-type:none}ul.lst-kix_abm0vft608vj-0{list-style-type:none}.lst-kix_3hj7vx5mmg85-7>li:before{content:"\0025cb  "}ul.lst-kix_abm0vft608vj-6{list-style-type:none}ul.lst-kix_abm0vft608vj-5{list-style-type:none}ul.lst-kix_abm0vft608vj-4{list-style-type:none}ul.lst-kix_abm0vft608vj-3{list-style-type:none}.lst-kix_3hj7vx5mmg85-4>li:before{content:"\0025cb  "}.lst-kix_3hj7vx5mmg85-8>li:before{content:"\0025a0  "}.lst-kix_abm0vft608vj-6>li:before{content:"\0025cf  "}ul.lst-kix_abm0vft608vj-8{list-style-type:none}ul.lst-kix_abm0vft608vj-7{list-style-type:none}.lst-kix_3hj7vx5mmg85-5>li:before{content:"\0025a0  "}.lst-kix_abm0vft608vj-7>li:before{content:"\0025cb  "}.lst-kix_abm0vft608vj-8>li:before{content:"\0025a0  "}.lst-kix_3hj7vx5mmg85-6>li:before{content:"\0025cf  "}ul.lst-kix_jxw9l0x3mo2n-4{list-style-type:none}ul.lst-kix_xk79878jm5nc-8{list-style-type:none}ul.lst-kix_jxw9l0x3mo2n-5{list-style-type:none}ul.lst-kix_jxw9l0x3mo2n-6{list-style-type:none}ul.lst-kix_xk79878jm5nc-6{list-style-type:none}ul.lst-kix_jxw9l0x3mo2n-7{list-style-type:none}ul.lst-kix_xk79878jm5nc-7{list-style-type:none}ul.lst-kix_jxw9l0x3mo2n-8{list-style-type:none}.lst-kix_ru6nmmsea7z3-8>li:before{content:"\0025a0  "}ul.lst-kix_xk79878jm5nc-0{list-style-type:none}ul.lst-kix_xk79878jm5nc-1{list-style-type:none}ul.lst-kix_xk79878jm5nc-4{list-style-type:none}ul.lst-kix_xk79878jm5nc-5{list-style-type:none}ul.lst-kix_xk79878jm5nc-2{list-style-type:none}ul.lst-kix_xk79878jm5nc-3{list-style-type:none}.lst-kix_ru6nmmsea7z3-4>li:before{content:"\0025cb  "}.lst-kix_ru6nmmsea7z3-6>li:before{content:"\0025cf  "}ul.lst-kix_jxw9l0x3mo2n-0{list-style-type:none}ul.lst-kix_jxw9l0x3mo2n-1{list-style-type:none}ul.lst-kix_jxw9l0x3mo2n-2{list-style-type:none}ul.lst-kix_jxw9l0x3mo2n-3{list-style-type:none}ul.lst-kix_7sf02ixc4n0t-8{list-style-type:none}ul.lst-kix_tqkcwm2pxtcs-5{list-style-type:none}ul.lst-kix_7sf02ixc4n0t-7{list-style-type:none}ul.lst-kix_tqkcwm2pxtcs-4{list-style-type:none}ul.lst-kix_ooubh04vkivw-0{list-style-type:none}ul.lst-kix_tqkcwm2pxtcs-7{list-style-type:none}ul.lst-kix_ooubh04vkivw-1{list-style-type:none}ul.lst-kix_tqkcwm2pxtcs-6{list-style-type:none}ul.lst-kix_ooubh04vkivw-2{list-style-type:none}ul.lst-kix_7sf02ixc4n0t-4{list-style-type:none}ul.lst-kix_7sf02ixc4n0t-3{list-style-type:none}ul.lst-kix_tqkcwm2pxtcs-8{list-style-type:none}ul.lst-kix_7sf02ixc4n0t-6{list-style-type:none}ul.lst-kix_7sf02ixc4n0t-5{list-style-type:none}ul.lst-kix_7sf02ixc4n0t-0{list-style-type:none}ul.lst-kix_ooubh04vkivw-7{list-style-type:none}ul.lst-kix_ooubh04vkivw-8{list-style-type:none}ul.lst-kix_7sf02ixc4n0t-2{list-style-type:none}ul.lst-kix_7sf02ixc4n0t-1{list-style-type:none}ul.lst-kix_tqkcwm2pxtcs-1{list-style-type:none}ul.lst-kix_ooubh04vkivw-3{list-style-type:none}ul.lst-kix_tqkcwm2pxtcs-0{list-style-type:none}ul.lst-kix_ooubh04vkivw-4{list-style-type:none}ul.lst-kix_tqkcwm2pxtcs-3{list-style-type:none}ul.lst-kix_ooubh04vkivw-5{list-style-type:none}ul.lst-kix_tqkcwm2pxtcs-2{list-style-type:none}ul.lst-kix_ooubh04vkivw-6{list-style-type:none}ul.lst-kix_ru6nmmsea7z3-3{list-style-type:none}ul.lst-kix_ru6nmmsea7z3-4{list-style-type:none}ul.lst-kix_ru6nmmsea7z3-1{list-style-type:none}ul.lst-kix_ru6nmmsea7z3-2{list-style-type:none}ul.lst-kix_ru6nmmsea7z3-0{list-style-type:none}.lst-kix_xk79878jm5nc-2>li:before{content:"\0025a0  "}.lst-kix_wjngh47mdlmf-1>li:before{content:"\0025cb  "}ul.lst-kix_ru6nmmsea7z3-7{list-style-type:none}ul.lst-kix_ru6nmmsea7z3-8{list-style-type:none}.lst-kix_xk79878jm5nc-4>li:before{content:"\0025cb  "}ul.lst-kix_ru6nmmsea7z3-5{list-style-type:none}ul.lst-kix_ru6nmmsea7z3-6{list-style-type:none}.lst-kix_wjngh47mdlmf-3>li:before{content:"\0025cf  "}.lst-kix_wjngh47mdlmf-5>li:before{content:"\0025a0  "}.lst-kix_wjngh47mdlmf-7>li:before{content:"\0025cb  "}.lst-kix_xk79878jm5nc-0>li:before{content:"\0025cf  "}.lst-kix_1x3wbxjtogje-5>li:before{content:"\0025a0  "}ul.lst-kix_hhvg90usbo2l-3{list-style-type:none}.lst-kix_g0muxcwnlshw-3>li:before{content:"\0025cf  "}ul.lst-kix_hhvg90usbo2l-2{list-style-type:none}.lst-kix_ooubh04vkivw-0>li:before{content:"\0025cf  "}ul.lst-kix_hhvg90usbo2l-1{list-style-type:none}ul.lst-kix_hhvg90usbo2l-0{list-style-type:none}.lst-kix_ooubh04vkivw-2>li:before{content:"\0025a0  "}.lst-kix_1x3wbxjtogje-1>li:before{content:"\0025cb  "}.lst-kix_1x3wbxjtogje-7>li:before{content:"\0025cb  "}.lst-kix_g0muxcwnlshw-1>li:before{content:"\0025cb  "}.lst-kix_ooubh04vkivw-8>li:before{content:"\0025a0  "}.lst-kix_ru6nmmsea7z3-2>li:before{content:"\0025a0  "}.lst-kix_ooubh04vkivw-6>li:before{content:"\0025cf  "}.lst-kix_ooubh04vkivw-4>li:before{content:"\0025cb  "}.lst-kix_xk79878jm5nc-6>li:before{content:"\0025cf  "}ul.lst-kix_hhvg90usbo2l-8{list-style-type:none}.lst-kix_ru6nmmsea7z3-0>li:before{content:"\0025cf  "}.lst-kix_1x3wbxjtogje-3>li:before{content:"\0025cf  "}ul.lst-kix_hhvg90usbo2l-7{list-style-type:none}ul.lst-kix_hhvg90usbo2l-6{list-style-type:none}.lst-kix_xk79878jm5nc-8>li:before{content:"\0025a0  "}ul.lst-kix_hhvg90usbo2l-5{list-style-type:none}ul.lst-kix_hhvg90usbo2l-4{list-style-type:none}.lst-kix_hhvg90usbo2l-2>li:before{content:"\0025a0  "}.lst-kix_hhvg90usbo2l-4>li:before{content:"\0025cb  "}.lst-kix_hhvg90usbo2l-1>li:before{content:"\0025cb  "}.lst-kix_hhvg90usbo2l-5>li:before{content:"\0025a0  "}.lst-kix_hhvg90usbo2l-0>li:before{content:"\0025cf  "}.lst-kix_hhvg90usbo2l-6>li:before{content:"\0025cf  "}.lst-kix_hhvg90usbo2l-8>li:before{content:"\0025a0  "}.lst-kix_hhvg90usbo2l-7>li:before{content:"\0025cb  "}.lst-kix_8q09q9ghiutv-6>li:before{content:"\0025cf  "}ul.lst-kix_8q09q9ghiutv-8{list-style-type:none}.lst-kix_8q09q9ghiutv-7>li:before{content:"\0025cb  "}.lst-kix_8q09q9ghiutv-8>li:before{content:"\0025a0  "}.lst-kix_7sf02ixc4n0t-8>li:before{content:"\0025a0  "}.lst-kix_7sf02ixc4n0t-7>li:before{content:"\0025cb  "}ul.lst-kix_rmprs9ydx5ce-8{list-style-type:none}.lst-kix_7sf02ixc4n0t-4>li:before{content:"\0025cb  "}.lst-kix_7sf02ixc4n0t-6>li:before{content:"\0025cf  "}ul.lst-kix_rmprs9ydx5ce-4{list-style-type:none}ul.lst-kix_rmprs9ydx5ce-5{list-style-type:none}ul.lst-kix_rmprs9ydx5ce-6{list-style-type:none}ul.lst-kix_rmprs9ydx5ce-7{list-style-type:none}.lst-kix_7sf02ixc4n0t-1>li:before{content:"\0025cb  "}.lst-kix_7sf02ixc4n0t-5>li:before{content:"\0025a0  "}.lst-kix_8q09q9ghiutv-0>li:before{content:"\0025cf  "}ul.lst-kix_8q09q9ghiutv-1{list-style-type:none}ul.lst-kix_8q09q9ghiutv-0{list-style-type:none}ul.lst-kix_8q09q9ghiutv-3{list-style-type:none}.lst-kix_7sf02ixc4n0t-2>li:before{content:"\0025a0  "}ul.lst-kix_8q09q9ghiutv-2{list-style-type:none}ul.lst-kix_8q09q9ghiutv-5{list-style-type:none}ul.lst-kix_8q09q9ghiutv-4{list-style-type:none}ul.lst-kix_8q09q9ghiutv-7{list-style-type:none}.lst-kix_7sf02ixc4n0t-3>li:before{content:"\0025cf  "}ul.lst-kix_8q09q9ghiutv-6{list-style-type:none}.lst-kix_8q09q9ghiutv-5>li:before{content:"\0025a0  "}.lst-kix_8q09q9ghiutv-4>li:before{content:"\0025cb  "}ul.lst-kix_rmprs9ydx5ce-0{list-style-type:none}.lst-kix_wjngh47mdlmf-0>li:before{content:"\0025cf  "}ul.lst-kix_rmprs9ydx5ce-1{list-style-type:none}ul.lst-kix_rmprs9ydx5ce-2{list-style-type:none}ul.lst-kix_rmprs9ydx5ce-3{list-style-type:none}.lst-kix_7sf02ixc4n0t-0>li:before{content:"\0025cf  "}.lst-kix_8q09q9ghiutv-1>li:before{content:"\0025cb  "}.lst-kix_8q09q9ghiutv-3>li:before{content:"\0025cf  "}.lst-kix_hhvg90usbo2l-3>li:before{content:"\0025cf  "}.lst-kix_8q09q9ghiutv-2>li:before{content:"\0025a0  "}.lst-kix_ernyvei843j0-4>li:before{content:"\0025cb  "}.lst-kix_ernyvei843j0-6>li:before{content:"\0025cf  "}.lst-kix_ernyvei843j0-3>li:before{content:"\0025cf  "}.lst-kix_ernyvei843j0-7>li:before{content:"\0025cb  "}.lst-kix_ernyvei843j0-0>li:before{content:"\0025cf  "}.lst-kix_ernyvei843j0-2>li:before{content:"\0025a0  "}.lst-kix_ernyvei843j0-8>li:before{content:"\0025a0  "}.lst-kix_ernyvei843j0-1>li:before{content:"\0025cb  "}.lst-kix_ernyvei843j0-5>li:before{content:"\0025a0  "}.lst-kix_ru6nmmsea7z3-3>li:before{content:"\0025cf  "}.lst-kix_ru6nmmsea7z3-5>li:before{content:"\0025a0  "}.lst-kix_abm0vft608vj-0>li:before{content:"\0025cf  "}.lst-kix_ru6nmmsea7z3-7>li:before{content:"\0025cb  "}.lst-kix_xk79878jm5nc-3>li:before{content:"\0025cf  "}ul.lst-kix_1x3wbxjtogje-0{list-style-type:none}.lst-kix_xk79878jm5nc-1>li:before{content:"\0025cb  "}.lst-kix_xk79878jm5nc-5>li:before{content:"\0025a0  "}ul.lst-kix_1x3wbxjtogje-2{list-style-type:none}ul.lst-kix_1x3wbxjtogje-1{list-style-type:none}.lst-kix_wjngh47mdlmf-2>li:before{content:"\0025a0  "}ul.lst-kix_wjngh47mdlmf-0{list-style-type:none}ul.lst-kix_wjngh47mdlmf-1{list-style-type:none}ul.lst-kix_wjngh47mdlmf-2{list-style-type:none}.lst-kix_wjngh47mdlmf-4>li:before{content:"\0025cb  "}ul.lst-kix_wjngh47mdlmf-3{list-style-type:none}ul.lst-kix_wjngh47mdlmf-4{list-style-type:none}ul.lst-kix_wjngh47mdlmf-5{list-style-type:none}ul.lst-kix_wjngh47mdlmf-6{list-style-type:none}ul.lst-kix_wjngh47mdlmf-7{list-style-type:none}ul.lst-kix_wjngh47mdlmf-8{list-style-type:none}.lst-kix_wjngh47mdlmf-8>li:before{content:"\0025a0  "}.lst-kix_wjngh47mdlmf-6>li:before{content:"\0025cf  "}.lst-kix_1x3wbxjtogje-4>li:before{content:"\0025cb  "}.lst-kix_1x3wbxjtogje-6>li:before{content:"\0025cf  "}.lst-kix_g0muxcwnlshw-2>li:before{content:"\0025a0  "}.lst-kix_g0muxcwnlshw-4>li:before{content:"\0025cb  "}ul.lst-kix_ernyvei843j0-3{list-style-type:none}ul.lst-kix_ernyvei843j0-2{list-style-type:none}.lst-kix_1x3wbxjtogje-0>li:before{content:"\0025cf  "}.lst-kix_1x3wbxjtogje-8>li:before{content:"\0025a0  "}ul.lst-kix_ernyvei843j0-5{list-style-type:none}.lst-kix_g0muxcwnlshw-0>li:before{content:"\0025cf  "}ul.lst-kix_ernyvei843j0-4{list-style-type:none}.lst-kix_ooubh04vkivw-1>li:before{content:"\0025cb  "}ul.lst-kix_ernyvei843j0-1{list-style-type:none}ul.lst-kix_ernyvei843j0-0{list-style-type:none}.lst-kix_ooubh04vkivw-7>li:before{content:"\0025cb  "}.lst-kix_ru6nmmsea7z3-1>li:before{content:"\0025cb  "}ul.lst-kix_1x3wbxjtogje-4{list-style-type:none}ul.lst-kix_1x3wbxjtogje-3{list-style-type:none}.lst-kix_ooubh04vkivw-3>li:before{content:"\0025cf  "}.lst-kix_xk79878jm5nc-7>li:before{content:"\0025cb  "}.lst-kix_1x3wbxjtogje-2>li:before{content:"\0025a0  "}ul.lst-kix_1x3wbxjtogje-6{list-style-type:none}ul.lst-kix_1x3wbxjtogje-5{list-style-type:none}ul.lst-kix_1x3wbxjtogje-8{list-style-type:none}ul.lst-kix_1x3wbxjtogje-7{list-style-type:none}.lst-kix_ooubh04vkivw-5>li:before{content:"\0025a0  "}ol{margin:0;padding:0}table td,table th{padding:0}.c3{color:#ff0000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:10pt;font-family:"Consolas";font-style:normal}.c5{color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c12{color:#38761d;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c4{color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:12pt;font-family:"Arial";font-style:normal}.c0{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c21{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:center}.c30{padding-top:0pt;padding-bottom:0pt;line-height:1.2545454545454544;orphans:2;widows:2;text-align:center}.c1{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c16{text-decoration:none;vertical-align:baseline;font-size:12pt;font-family:"Arial";font-style:normal}.c27{text-decoration:none;vertical-align:baseline;font-size:18pt;font-family:"Arial";font-style:normal}.c20{text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c26{padding-top:14pt;padding-bottom:4pt;line-height:1.15;text-align:left}.c34{padding-top:0pt;padding-bottom:4pt;line-height:1.15;text-align:center}.c36{padding-top:18pt;padding-bottom:4pt;line-height:1.15;text-align:center}.c13{color:#000000;text-decoration:none;vertical-align:baseline;font-style:normal}.c33{text-decoration:none;vertical-align:baseline;font-family:"Arial";font-style:italic}.c8{font-size:10pt;font-family:"Consolas";font-weight:400}.c31{background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 72pt}.c14{font-weight:700;font-size:13.5pt;font-family:"Arial"}.c2{margin-left:36pt;padding-left:0pt}.c23{margin-left:108pt;padding-left:0pt}.c19{color:#800080;text-decoration:underline}.c7{margin-left:72pt;padding-left:0pt}.c9{color:inherit;text-decoration:inherit}.c35{font-size:18pt;font-family:"Times New Roman"}.c18{color:#1155cc;text-decoration:underline}.c6{padding:0;margin:0}.c32{font-size:11pt;font-family:"Times New Roman"}.c24{margin-left:36pt}.c11{height:11pt}.c22{color:#800000}.c25{font-weight:400}.c17{font-size:12pt}.c29{color:#38761d}.c28{color:#000000}.c15{font-weight:700}.c10{color:#ff0000}.title{padding-top:0pt;color:#000000;font-size:26pt;padding-bottom:3pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}.subtitle{padding-top:0pt;color:#666666;font-size:15pt;padding-bottom:16pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:20pt;color:#000000;font-size:20pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h2{padding-top:18pt;color:#000000;font-size:16pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h3{padding-top:16pt;color:#434343;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h4{padding-top:14pt;color:#666666;font-size:12pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h5{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h6{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}</style>
+		</head>
+		<body class="">
+			<h2 class="c34" id="h.8mqe3rca4rin">
+				<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 216.00px; height: 107.56px;">
+					<img alt="Description: http://www.cs.sunysb.edu/~cse214/images/logo.gif" src="./hw1cse214_files/logo.gif" style="width: 216.00px; height: 107.56px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+					</span>
+					<span class="c13 c15 c35">&nbsp; </span>
+				</h2>
+				<h2 class="c36" id="h.8mqe3rca4rin-1">
+					<span class="c22 c15 c27">HOMEWORK - SPRING 2017</span>
+				</h2>
+				<hr>
+					<p class="c11 c30">
+						<span class="c13 c25 c32">
+					</span></p>
+					<h3 class="c26" id="h.4zo2vkqwgpb5">
+						<span class="c13 c14">HOMEWORK 1 - due Tuesday, February 7th no later than 6:00pm</span>
+					</h3><p class="c1">
+						<span class="c5">REMINDERS:</span>
+					</p>
+					<ul class="c6 lst-kix_8q09q9ghiutv-0 start">
+						<li class="c1 c2">
+							<span class="c17 c15">Be sure your code follows the </span>
+							<span class="c19 c17 c15">
+								<a class="c9" href="http://www.cs.sunysb.edu/~cse214/codingstyle.htm">coding style</a>
+							</span>
+							<span class="c4">&nbsp;for CSE214.</span>
+						</li>
+						<li class="c1 c2">
+							<span class="c15 c17">Make sure you read the warnings about </span>
+							<span class="c17 c15 c19">
+								<a class="c9" href="http://www.cs.sunysb.edu/~cse214/courseinfo.htm">academic dishonesty</a>
+							</span>
+							<span class="c17 c15">. </span>
+							<span class="c17 c28 c15 c33">Remember, all work you submit for homework assignments MUST be entirely your own work. Also, group efforts are not allowed.</span>
+						</li>
+						<li class="c1 c2">
+							<span class="c17 c15">Login to your </span>
+							<span class="c19 c17 c15">
+								<a class="c9" href="http://facdev02.cs.stonybrook.edu:8080/grade.Login">grading account</a>
+							</span>
+							<span class="c4">&nbsp;and click "Submit Assignment" to upload and submit your assignment.</span>
+						</li>
+						<li class="c1 c2">
+							<span class="c15 c10 c16">You are not allowed to use ArrayList, Vector or any other Java API Data Structure classes to implement this assignment except where noted.</span>
+						</li>
+						<li class="c1 c2">
+							<span class="c4">You may use Scanner, InputStreamReader, or any other class that you wish for keyboard input.</span>
+						</li>
+					</ul><p class="c1 c11">
+						<span class="c0">
+					</span></p><p class="c1">
+						<span class="c0">Stony Brook University has recently opened some new residence halls. Since these halls are much more modern than the other residence halls, the university would like to keep track of the students who live there electronically. You will write a program that will manage the students that live in a residence hall for the residence hall director. Your program will model a residence hall with three floors, each of which will be modeled by an array, containing student objects. For each student we will need to keep track of their name, id, and the number of times the student has been written up (documented). If a student has been written up 3 times, they will be kicked out of the residence hall. To make the RA's job easier, all the students on the floor will be placed in the lowest available room number (there will be no holes in the array). If a student moves out, all the students remaining must be shifted down one room in order to make them closer to the the RA at the beginning of the hallway. Also, sometimes, maintenance work must be done on one floor, so therefore students must be moved to another floor. For the convenience of the building administrator (RHD), you will also have to implement a deep copy (clone) function, so the RHD can experiment with alternative floor plans without ruining their original, genius floor plan.</span>
+					</p><p class="c1 c11">
+						<span class="c0">
+					</span></p><p class="c1">
+						<span class="c15">NOTE</span>
+						<span class="c0">: All exceptions explicitly thrown in Required Classes except for IllegalArgumentException are custom exceptions that need to be made by you.</span>
+					</p>
+					<hr>
+						<p class="c1 c11">
+							<span class="c0">
+						</span></p><p class="c21">
+							<span class="c5">Required Classes</span>
+						</p><p class="c1 c11">
+							<span class="c5">
+						</span></p><p class="c1">
+							<span class="c5">Residence Hall Manager (Driver Class)</span>
+						</p>
+						<ul class="c6 lst-kix_ru6nmmsea7z3-0 start">
+							<li class="c1 c2">
+								<span class="c0">public static void main(String[] args)</span>
+							</li>
+						</ul>
+						<ul class="c6 lst-kix_ru6nmmsea7z3-1 start">
+							<li class="c1 c7">
+								<span class="c0">Runs the User interface menu as shown in Required Functions</span>
+							</li>
+							<li class="c1 c7">
+								<span class="c0">Can be changed as necessary for GUI/Android App</span>
+							</li>
+							<li class="c1 c7">
+								<span>This method will contain </span>
+								<span class="c15">three </span>
+								<span>Floor</span>
+								<span class="c0">&nbsp;objects for cloning. You may use an array of Floor objects if you like, but this is not required. We will refer to them as Floor 1, Floor 2, and Floor 3</span>
+							</li>
+						</ul><p class="c1 c11">
+							<span class="c0">
+						</span></p><p class="c1">
+							<span class="c15">Floor </span>
+							<span class="c29">//If you're familiar with ArrayList, this works in a somewhat similar way</span>
+						</p>
+						<ul class="c6 lst-kix_wjngh47mdlmf-0 start">
+							<li class="c1 c2">
+								<span class="c10">private </span>
+								<span class="c0">Student[] students</span>
+							</li>
+							<li class="c1 c2">
+								<span class="c10">Final </span>
+								<span>int CAPACITY = 50 </span>
+								<span class="c12">/* If this number is changed, your code should work with the<br>*new number. The number 50 should not be present elsewhere in your code, you should <br>*instead reference CAPACITY */</span>
+									</li>
+								</ul>
+								<ul class="c6 lst-kix_hhvg90usbo2l-0 start">
+									<li class="c1 c2">
+										<span class="c0">public Floor()</span>
+									</li>
+								</ul>
+								<ul class="c6 lst-kix_hhvg90usbo2l-1 start">
+									<li class="c1 c7">
+										<span class="c0">Constructor: initializes students to a new Student array of size CAPACITY</span>
+									</li>
+								</ul>
+								<ul class="c6 lst-kix_jxw9l0x3mo2n-0 start">
+									<li class="c1 c2">
+										<span class="c0">public void addStudent(Student student, int position)</span>
+									</li>
+								</ul>
+								<ul class="c6 lst-kix_jxw9l0x3mo2n-1 start">
+									<li class="c1 c7">
+										<span class="c0">adds the student at the desired position. if there are students at/after that position, they will be shifted to the right</span>
+									</li>
+									<li class="c1 c7">
+										<span class="c5">Throws:</span>
+									</li>
+								</ul>
+								<ul class="c6 lst-kix_jxw9l0x3mo2n-2 start">
+									<li class="c1 c23">
+										<span class="c0">FullFloorException if the floor is full</span>
+									</li>
+									<li class="c1 c23">
+										<span class="c0">IllegalArgumentException if the index entered is invalid (holes left in the array, negative)</span>
+									</li>
+								</ul>
+								<ul class="c6 lst-kix_abm0vft608vj-0 start">
+									<li class="c1 c2">
+										<span class="c0">public Student removeStudent(int position)</span>
+									</li>
+								</ul>
+								<ul class="c6 lst-kix_abm0vft608vj-1 start">
+									<li class="c1 c7">
+										<span class="c0">Removes and returns the student from the given position. All subsequent students are shifted left to remove the hole in the array</span>
+									</li>
+									<li class="c1 c7">
+										<span class="c5">Throws:</span>
+									</li>
+								</ul>
+								<ul class="c6 lst-kix_abm0vft608vj-2 start">
+									<li class="c1 c23">
+										<span class="c0">EmptyFloorException if the floor is empty</span>
+									</li>
+									<li class="c1 c23">
+										<span>IllegalArgumentException if the index given is too high (ie: no student at that index) or if the index given is negative</span>
+									</li>
+								</ul><p class="c1 c11">
+									<span class="c15 c10 c20">
+								</span></p>
+								<ul class="c6 lst-kix_g0muxcwnlshw-0 start">
+									<li class="c1 c2">
+										<span class="c0">public Student getStudent(int position)</span>
+									</li>
+								</ul>
+								<ul class="c6 lst-kix_g0muxcwnlshw-1 start">
+									<li class="c1 c7">
+										<span class="c0">returns the Student at the given position</span>
+									</li>
+									<li class="c1 c7">
+										<span class="c5">Throws:</span>
+									</li>
+								</ul>
+								<ul class="c6 lst-kix_g0muxcwnlshw-2 start">
+									<li class="c1 c23">
+										<span class="c0">IllegalArgumentException if there is no student at that position (ie: too high, or negative)</span>
+									</li>
+								</ul>
+								<ul class="c6 lst-kix_g0muxcwnlshw-0">
+									<li class="c1 c2">
+										<span class="c0">public void setStudent(int position)</span>
+									</li>
+								</ul>
+								<ul class="c6 lst-kix_g0muxcwnlshw-1 start">
+									<li class="c1 c7">
+										<span class="c0">sets the spot at that position to the given student</span>
+									</li>
+									<li class="c1 c7">
+										<span class="c5">Throws:</span>
+									</li>
+								</ul>
+								<ul class="c6 lst-kix_g0muxcwnlshw-2 start">
+									<li class="c1 c23">
+										<span class="c0">IllegalArgumentException if the position cannot be set (ie: too high, or negative)</span>
+									</li>
+								</ul><p class="c1 c11">
+									<span class="c0">
+								</span></p>
+								<ul class="c6 lst-kix_ooubh04vkivw-0 start">
+									<li class="c1 c2">
+										<span class="c0">public int count()</span>
+									</li>
+								</ul>
+								<ul class="c6 lst-kix_ooubh04vkivw-1 start">
+									<li class="c1 c7">
+										<span class="c0">Returns the number of students in the floor</span>
+									</li>
+									<li class="c1 c7">
+										<span class="c10 c15">This should run in O(1) time.</span>
+									</li>
+								</ul>
+								<ul class="c6 lst-kix_ooubh04vkivw-0">
+									<li class="c1 c2">
+										<span class="c0">public Floor clone()</span>
+									</li>
+								</ul>
+								<ul class="c6 lst-kix_ooubh04vkivw-1 start">
+									<li class="c1 c7">
+										<span class="c0">Makes a deep copy of the floor, and all the students.</span>
+									</li>
+								</ul><p class="c1 c11 c24">
+									<span class="c0">
+								</span></p><p class="c1 c11">
+									<span class="c0">
+								</span></p><p class="c1">
+									<span class="c15">Student </span>
+									<span class="c29">//You can use your IDE to automatically generate getters and setters, and constructors</span>
+								</p>
+								<ul class="c6 lst-kix_xk79878jm5nc-0 start">
+									<li class="c1 c2">
+										<span class="c10">Final </span>
+										<span class="c0">int MAX_WRITEUPS = 3</span>
+									</li>
+									<li class="c1 c2">
+										<span class="c0">private String name</span>
+									</li>
+									<li class="c1 c2">
+										<span class="c0">private int idNumber</span>
+									</li>
+									<li class="c1 c2">
+										<span class="c0">private int numWriteups</span>
+									</li>
+									<li class="c1 c2">
+										<span class="c0">Getters and Setters for all of the above variables</span>
+									</li>
+									<li class="c1 c2">
+										<span>public Student clone() </span>
+										<span class="c29">//Makes cloning a floor much more elegant</span>
+									</li>
+								</ul><p class="c1 c11">
+									<span class="c5">
+								</span></p><p class="c1">
+									<span class="c15">Exceptions </span>
+									<span class="c12">//Create an empty class that simply extends Exception</span>
+								</p>
+								<ul class="c6 lst-kix_xk79878jm5nc-0">
+									<li class="c1 c2">
+										<span class="c0">Full Floor Exception</span>
+									</li>
+									<li class="c1 c2">
+										<span class="c0">Empty Floor Exception</span>
+									</li>
+								</ul><p class="c1 c11">
+									<span class="c0">
+								</span></p>
+								<hr>
+									<p class="c1 c11">
+										<span class="c0">
+									</span></p><p class="c21">
+										<span class="c5">General Recommendations</span>
+									</p><p class="c1">
+										<span class="c0">You might want to implement a toString() method for Student and Floor to make debugging and printing easier. You do not have to do this, but it will help you.</span>
+									</p><p class="c1 c11">
+										<span class="c0">
+									</span></p><p class="c1">
+										<span>You can feel free to add extra methods and variables if you need.</span>
+										</p><hr>
+										<p></p><p class="c21">
+											<span class="c5">UI Required Functions</span>
+										</p><p class="c21 c11">
+											<span class="c5">
+										</span></p><p class="c1">
+											<span class="c5">The menu should have options similar to these, and NOT be case sensitive.</span>
+										</p><p class="c1">
+											<span class="c0">Note: the user should see rooms numbered 1 to CAPACITY. If you choose to make the array size CAPACITY+1 and leave position 0 blank, that's fine. If you want to subtract one from every index the user enters (and add one to indices for display) that's ok too.</span>
+										</p><p class="c1">
+											<span class="c0">The menu should not be case sensitive.</span>
+										</p><p class="c1 c11">
+											<span class="c0">
+										</span></p>
+										<ul class="c6 lst-kix_tqkcwm2pxtcs-0 start">
+											<li class="c1 c2">
+												<span class="c0">A - Add Student</span>
+											</li>
+										</ul>
+										<ul class="c6 lst-kix_tqkcwm2pxtcs-1 start">
+											<li class="c1 c7">
+												<span class="c0">Name</span>
+											</li>
+											<li class="c1 c7">
+												<span class="c0">ID</span>
+											</li>
+											<li class="c1 c7">
+												<span class="c0">Position</span>
+											</li>
+										</ul>
+										<ul class="c6 lst-kix_tqkcwm2pxtcs-0">
+											<li class="c1 c2">
+												<span class="c0">R - Remove Student</span>
+											</li>
+										</ul>
+										<ul class="c6 lst-kix_tqkcwm2pxtcs-1 start">
+											<li class="c1 c7">
+												<span class="c0">Position</span>
+											</li>
+										</ul>
+										<ul class="c6 lst-kix_tqkcwm2pxtcs-0">
+											<li class="c1 c2">
+												<span class="c0">S - Swap Students</span>
+											</li>
+										</ul>
+										<ul class="c6 lst-kix_tqkcwm2pxtcs-1 start">
+											<li class="c1 c7">
+												<span class="c0">Floor and Position for both</span>
+											</li>
+										</ul>
+										<ul class="c6 lst-kix_tqkcwm2pxtcs-0">
+											<li class="c1 c2">
+												<span class="c0">M - Move Student</span>
+											</li>
+										</ul>
+										<ul class="c6 lst-kix_tqkcwm2pxtcs-1 start">
+											<li class="c1 c7">
+												<span class="c0">Original floor and position, destination floor and position</span>
+											</li>
+											<li class="c1 c7">
+												<span class="c0">Note: if the student cannot be moved, they should remain where they were originally</span>
+											</li>
+										</ul>
+										<ul class="c6 lst-kix_tqkcwm2pxtcs-0">
+											<li class="c1 c2">
+												<span class="c0">F - Select floor</span>
+											</li>
+										</ul>
+										<ul class="c6 lst-kix_tqkcwm2pxtcs-1 start">
+											<li class="c1 c7">
+												<span class="c0">Floor number</span>
+											</li>
+											<li class="c1 c7">
+												<span class="c0">Floor 1 should be selected when the program loads</span>
+											</li>
+										</ul>
+										<ul class="c6 lst-kix_tqkcwm2pxtcs-0">
+											<li class="c1 c2">
+												<span class="c0">C - Copy Floor</span>
+											</li>
+										</ul>
+										<ul class="c6 lst-kix_tqkcwm2pxtcs-1 start">
+											<li class="c1 c7">
+												<span class="c0">Source Floor Number</span>
+											</li>
+											<li class="c1 c7">
+												<span class="c0">Destination floor number</span>
+											</li>
+											<li class="c1 c7">
+												<span class="c0">This should be a deep copy</span>
+											</li>
+										</ul>
+										<ul class="c6 lst-kix_tqkcwm2pxtcs-0">
+											<li class="c1 c2">
+												<span class="c0">P - Print Current Floor</span>
+											</li>
+										</ul>
+										<ul class="c6 lst-kix_tqkcwm2pxtcs-1 start">
+											<li class="c1 c7">
+												<span class="c0">Please try to make it neat (use printf if you can)</span>
+											</li>
+										</ul>
+										<ul class="c6 lst-kix_tqkcwm2pxtcs-0">
+											<li class="c1 c2">
+												<span class="c0">W - Write Up Student</span>
+											</li>
+										</ul>
+										<ul class="c6 lst-kix_tqkcwm2pxtcs-1 start">
+											<li class="c1 c7">
+												<span class="c0">Student name - must match exactly</span>
+											</li>
+											<li class="c1 c7">
+												<span class="c0">If the student has reached MAX_WRITEUPS, they should be removed from the floor</span>
+											</li>
+										</ul>
+										<ul class="c6 lst-kix_tqkcwm2pxtcs-0">
+											<li class="c1 c2">
+												<span>Q - Quit.</span>
+											</li>
+										</ul><p class="c1 c11">
+											<span class="c0">
+										</span></p><p class="c1 c11">
+											<span class="c0">
+										</span></p><p class="c1">
+											<span class="c5">Program Sample</span>
+										</p><p class="c1">
+											<span class="c13 c8">Welcome to RockStar Rez, the second worst housing management System at SBU.</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c13 c8">Menu:</span>
+										</p><p class="c1">
+											<span class="c13 c8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A) Add a student</span>
+										</p><p class="c1">
+											<span class="c13 c8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R) Remove a student</span>
+										</p><p class="c1">
+											<span class="c13 c8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S) Swap Students</span>
+										</p><p class="c1">
+											<span class="c13 c8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M) Move Student</span>
+										</p><p class="c1">
+											<span class="c13 c8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F) Select Floor</span>
+										</p><p class="c1">
+											<span class="c13 c8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C) Copy Floor</span>
+										</p><p class="c1">
+											<span class="c13 c8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P) Print Current Floor</span>
+										</p><p class="c1">
+											<span class="c13 c8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;W) Write Up Student</span>
+										</p><p class="c1">
+											<span class="c13 c8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Q) Quit</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">A</span>
+										</p><p class="c1">
+											<span class="c8">Add A Student:</span>
+										</p><p class="c1">
+											<span class="c8">Please enter a name: </span>
+											<span class="c3">Samuel Stanley</span>
+										</p><p class="c1">
+											<span class="c8">Please enter an id number: </span>
+											<span class="c3">1</span>
+										</p><p class="c1">
+											<span class="c8">Please enter a spot number: </span>
+											<span class="c3">1</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c13 c8">Samuel Stanley added to Floor 1 Room 1.</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">A</span>
+										</p><p class="c1">
+											<span class="c13 c8">Add A Student:</span>
+										</p><p class="c1">
+											<span class="c8">Please enter a name: </span>
+											<span class="c3">Ahmad Esmaili</span>
+										</p><p class="c1">
+											<span class="c8">Please enter an id number: </span>
+											<span class="c3">214</span>
+										</p><p class="c1">
+											<span class="c8">Please enter a spot number: </span>
+											<span class="c3">2</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c13 c8">Ahmad Esmaili added to Floor 1 Room 2.</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">A</span>
+										</p><p class="c1">
+											<span class="c13 c8">Add A Student:</span>
+										</p><p class="c1">
+											<span class="c8">Please enter a name: </span>
+											<span class="c3">Paul Fodor</span>
+										</p><p class="c1">
+											<span class="c8">Please enter an id number: </span>
+											<span class="c3">114</span>
+										</p><p class="c1">
+											<span class="c8">Please enter a spot number: </span>
+											<span class="c3">2</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c13 c8">Paul Fodor added to Floor 1 Room 2.</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">P</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c13 c8">Floor 1:</span>
+										</p><p class="c1">
+											<span class="c13 c8">Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ID &nbsp; &nbsp;Writeups</span>
+										</p><p class="c1">
+											<span class="c13 c8">----------------------------------------------------------</span>
+										</p><p class="c1">
+											<span class="c13 c8">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Samuel Stanley&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1">
+											<span class="c13 c8">2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paul Fodor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;114&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1">
+											<span class="c13 c8">3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ahmad Esmaili&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;214&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">A</span>
+										</p><p class="c1">
+											<span class="c13 c8">Add A Student:</span>
+										</p><p class="c1">
+											<span class="c8">Please enter a name: </span>
+											<span class="c3">Ritwik Banerjee</span>
+										</p><p class="c1">
+											<span class="c8">Please enter an id number: </span>
+											<span class="c3">214</span>
+										</p><p class="c1">
+											<span class="c8">Please enter a spot number: </span>
+											<span class="c3">5</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c13 c8">Invalid Spot Number.</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">A</span>
+										</p><p class="c1">
+											<span class="c13 c8">Add A Student:</span>
+										</p><p class="c1">
+											<span class="c8">Please enter a name: </span>
+											<span class="c3">Ritwik Banerjee</span>
+										</p><p class="c1">
+											<span class="c8">Please enter an id number: </span>
+											<span class="c3">219</span>
+										</p><p class="c1">
+											<span class="c8">Please enter a spot number: </span>
+											<span class="c3">2</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c8 c13">Ritwik Banerjee added to Floor 1 Room 2.</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">P</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c13 c8">Floor 1:</span>
+										</p><p class="c1">
+											<span class="c13 c8">Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ID &nbsp; &nbsp;Writeups</span>
+										</p><p class="c1">
+											<span class="c13 c8">----------------------------------------------------------</span>
+										</p><p class="c1">
+											<span class="c13 c8">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Samuel Stanley&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1">
+											<span class="c13 c8">2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ritwik Banerjee&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;219&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1">
+											<span class="c13 c8">3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paul Fodor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;114&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1">
+											<span class="c13 c8">4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ahmad Esmaili&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;214&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">M</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c8">Please enter the source floor:</span>
+											<span class="c8 c10">&nbsp;1</span>
+											<span class="c13 c8">&nbsp;</span>
+										</p><p class="c1">
+											<span class="c8">Please enter the source room: </span>
+											<span class="c8 c10">2</span>
+										</p><p class="c1">
+											<span class="c8">Please enter the destination floor: </span>
+											<span class="c8 c10">2</span>
+										</p><p class="c1">
+											<span class="c8">Please enter the destination room: </span>
+											<span class="c8 c10">1</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c13 c8">Ritwik Banerjee moved to Floor 2 room 1.</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">F</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c8">Please select a floor: </span>
+											<span class="c3">2</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c8">Floor 2 selected.</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">P</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c13 c8">Floor 2:</span>
+										</p><p class="c1">
+											<span class="c13 c8">Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ID &nbsp; &nbsp;Writeups</span>
+										</p><p class="c1">
+											<span class="c13 c8">----------------------------------------------------------</span>
+										</p><p class="c1">
+											<span class="c13 c8">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ritwik Banerjee&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;219&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c0">&nbsp;</span>
+										</p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">F</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c8">Please select a floor: </span>
+											<span class="c3">1</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c8">Floor 1 selected.</span>
+										</p><p class="c1 c11">
+											<span class="c0">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">S</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c8">Please enter the Student 1 floor:</span>
+											<span class="c8 c10">&nbsp;1</span>
+											<span class="c13 c8">&nbsp;</span>
+										</p><p class="c1">
+											<span class="c8">Please enter the Student 1 room: </span>
+											<span class="c8 c10">1</span>
+										</p><p class="c1">
+											<span class="c8">Please enter the Student 2 floor:</span>
+											<span class="c8 c10">&nbsp;1</span>
+											<span class="c13 c8">&nbsp;</span>
+										</p><p class="c1">
+											<span class="c8">Please enter the Student 2 room: </span>
+											<span class="c3">3</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c13 c8">Ahmad Esmaili and Samuel Stanley swapped.</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c8 c10">P</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c13 c8">Floor 1:</span>
+										</p><p class="c1">
+											<span class="c13 c8">Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ID &nbsp; &nbsp;Writeups</span>
+										</p><p class="c1">
+											<span class="c13 c8">----------------------------------------------------------</span>
+										</p><p class="c1">
+											<span class="c13 c8">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ahmad Esmaili&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;214&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1">
+											<span class="c13 c8">2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paul Fodor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;114&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1">
+											<span class="c13 c8">3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Samuel Stanley&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">C</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c8">Please enter the source floor:</span>
+											<span class="c8 c10">&nbsp;1</span>
+											<span class="c13 c8">&nbsp;</span>
+										</p><p class="c1">
+											<span class="c8">Please enter the destination floor: </span>
+											<span class="c3">3</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c13 c8">Floor 1 Copied to Floor 3.</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">W</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c13 c8">Please enter student name: Samuel Stanley</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c13 c8">Samuel Stanley has 1 writeup.</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c8 c10">P</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c13 c8">Floor 1:</span>
+										</p><p class="c1">
+											<span class="c13 c8">Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ID &nbsp; &nbsp;Writeups</span>
+										</p><p class="c1">
+											<span class="c13 c8">----------------------------------------------------------</span>
+										</p><p class="c1">
+											<span class="c13 c8">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ahmad Esmaili&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;214&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1">
+											<span class="c13 c8">2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paul Fodor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;114&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1">
+											<span class="c13 c8">3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Samuel Stanley&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">W</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c13 c8">Please enter student name: Samuel Stanley</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c13 c8">Samuel Stanley has 2 writeups.</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">W</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c13 c8">Please enter student name: Samuel Stanley</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c13 c8">Samuel Stanley has 3 writeups and has been removed from the building.</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c8 c10">P</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c13 c8">Floor 1:</span>
+										</p><p class="c1">
+											<span class="c13 c8">Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ID &nbsp; &nbsp;Writeups</span>
+										</p><p class="c1">
+											<span class="c13 c8">----------------------------------------------------------</span>
+										</p><p class="c1">
+											<span class="c13 c8">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ahmad Esmaili&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;214&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1">
+											<span class="c13 c8">2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paul Fodor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;114&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">F</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c8">Please select a floor: </span>
+											<span class="c3">3</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c8">Floor 3 selected.</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c8 c10">P</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c13 c8">Floor 1:</span>
+										</p><p class="c1">
+											<span class="c13 c8">Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ID &nbsp; &nbsp;Writeups</span>
+										</p><p class="c1">
+											<span class="c13 c8">----------------------------------------------------------</span>
+										</p><p class="c1">
+											<span class="c13 c8">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ahmad Esmaili&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;214&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1">
+											<span class="c13 c8">2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paul Fodor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;114&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1">
+											<span class="c13 c8">3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Samuel Stanley&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">R</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c8">Please select a student number: </span>
+											<span class="c3">2</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">F</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c8">Paul Fodor removed.</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c8 c10">P</span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c13 c8">Floor 3:</span>
+										</p><p class="c1">
+											<span class="c13 c8">Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ID &nbsp; &nbsp;Writeups</span>
+										</p><p class="c1">
+											<span class="c13 c8">----------------------------------------------------------</span>
+										</p><p class="c1">
+											<span class="c13 c8">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ahmad Esmaili&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;214&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1">
+											<span class="c13 c8">2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Samuel Stanley&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c8">Please select an option: </span>
+											<span class="c3">Q</span>
+										</p><p class="c1 c11">
+											<span class="c3">
+										</span></p><p class="c1">
+											<span class="c13 c8">See you later, alligator! </span>
+										</p><p class="c1 c11">
+											<span class="c13 c8">
+										</span></p><p class="c1">
+											<span class="c5">Exception Handling:<br>
+												</span>
+											</p><p class="c1">
+												<span class="c0">Your program should handle exceptions gracefully. It should not quit when an exception is thrown, inform the user, and allow the user to try making another input that will work (or return to the main menu).</span>
+											</p><p class="c1 c11">
+												<span class="c3">
+											</span></p><p class="c1">
+												<span class="c5">Extra Credit</span>
+											</p><p class="c1 c11">
+												<span class="c5">
+											</span></p><p class="c1">
+												<span>You will get up to 7 points extra credit for creating a JavaFX GUI, and up to 15 points for creating an Android App. Please discuss with your Grading TA if you choose to make an app or use Scene Builder, so you can coordinate submitting supplementary files with them.</span>
+											</p><p class="c1 c11">
+												<span class="c0">
+											</span></p>
+											<hr>
+												<p class="c1 c11">
+													<span class="c0">
+												</span></p><p class="c1 c11">
+													<span class="c0">
+												</span></p><p class="c1">
+													<span class="c18 c17 c15">
+														<a class="c9" href="http://www.cs.sunysb.edu/~cse214/courseinfo.htm">Course Info</a>
+													</span>
+													<span class="c22 c17 c15">&nbsp;| </span>
+													<span class="c18 c17 c15">
+														<a class="c9" href="http://www.cs.sunysb.edu/~cse214/schedule.htm">Schedule</a>
+													</span>
+													<span class="c22 c17 c15">&nbsp;| </span>
+													<span class="c17 c15 c18">
+														<a class="c9" href="http://www.cs.sunysb.edu/~cse214/sections.htm">Sections</a>
+													</span>
+													<span class="c22 c17 c15">&nbsp;| </span>
+													<span class="c18 c17 c15">
+														<a class="c9" href="http://www.cs.sunysb.edu/~cse214/index.html">Announcements</a>
+													</span>
+													<span class="c22 c17 c15">&nbsp;| </span>
+													<span class="c18 c17 c15">
+														<a class="c9" href="http://www.cs.sunysb.edu/~cse214/homework.htm">Homework</a>
+													</span>
+													<span class="c22 c17 c15">&nbsp;| </span>
+													<span class="c18 c17 c15">
+														<a class="c9" href="http://www.cs.sunysb.edu/~cse214/exams.htm">Exams</a>
+													</span>
+													<span class="c17 c15 c22">&nbsp;| </span>
+													<span class="c18 c17 c15">
+														<a class="c9" href="http://www.cs.sunysb.edu/~cse214/help.htm">Help/FAQ</a>
+													</span>
+													<span class="c22 c17 c15">&nbsp;| </span>
+													<span class="c18 c17 c15">
+														<a class="c9" href="http://www.cs.sunysb.edu/~cse214/grades.htm">Grades</a>
+													</span>
+													<span class="c22 c17 c15">&nbsp;| </span>
+													<span class="c18 c17 c15">
+														<a class="c9" href="http://www.cs.sunysb.edu/~cse214/index.html">HOME</a>
+													</span>
+												</p><p class="c1 c11">
+													<span class="c0">
+												</span></p>
+											
+										
+</body></html>

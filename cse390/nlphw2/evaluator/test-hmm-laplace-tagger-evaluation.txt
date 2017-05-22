@@ -1,0 +1,166 @@
+Accuracy: # correct predictions / # predictions: 0.41185103650706295
+
+Precision of tag ,: 0.7627118644067796
+Recall of tag ,: 0.19148936170212766
+F1 of tag ,: 0.30612244897959184
+
+Precision of tag NNS: 0.6968325791855203
+Recall of tag NNS: 0.4556213017751479
+F1 of tag NNS: 0.5509838998211091
+
+Precision of tag VBD: 0.5862068965517241
+Recall of tag VBD: 0.672316384180791
+F1 of tag VBD: 0.6263157894736843
+
+Precision of tag -NONE-: 0.7473684210526316
+Recall of tag -NONE-: 0.20699708454810495
+F1 of tag -NONE-: 0.32420091324200917
+
+Precision of tag DT: 0.2281947261663286
+Recall of tag DT: 0.5172413793103449
+F1 of tag DT: 0.3166783954961295
+
+Precision of tag JJ: 0.5188679245283019
+Recall of tag JJ: 0.35714285714285715
+F1 of tag JJ: 0.4230769230769231
+
+Precision of tag NN: 0.6173708920187794
+Recall of tag NN: 0.3937125748502994
+F1 of tag NN: 0.48080438756855587
+
+Precision of tag .: 0.15560391730141457
+Recall of tag .: 0.7222222222222222
+F1 of tag .: 0.2560429722470904
+
+Precision of tag PRP: 0.4027777777777778
+Recall of tag PRP: 0.6666666666666666
+F1 of tag PRP: 0.5021645021645021
+
+Precision of tag PDT: 0.2
+Recall of tag PDT: 1.0
+F1 of tag PDT: 0.33333333333333337
+
+Precision of tag NNP: 0.5010266940451745
+Recall of tag NNP: 0.4460694698354662
+F1 of tag NNP: 0.47195357833655704
+
+Precision of tag VBZ: 0.6382978723404256
+Recall of tag VBZ: 0.6060606060606061
+F1 of tag VBZ: 0.6217616580310881
+
+Precision of tag WP: 1.0
+Recall of tag WP: 0.9166666666666666
+F1 of tag WP: 0.9565217391304348
+
+Precision of tag VBN: 0.6341463414634146
+Recall of tag VBN: 0.48598130841121495
+F1 of tag VBN: 0.5502645502645502
+
+Precision of tag RB: 0.6415094339622641
+Recall of tag RB: 0.3063063063063063
+F1 of tag RB: 0.4146341463414634
+
+Precision of tag VBP: 0.4791666666666667
+Recall of tag VBP: 0.25274725274725274
+F1 of tag VBP: 0.33093525179856115
+
+Precision of tag IN: 0.49333333333333335
+Recall of tag IN: 0.2047970479704797
+F1 of tag IN: 0.2894393741851369
+
+Precision of tag '': 1.0
+Recall of tag '': 0.6111111111111112
+F1 of tag '': 0.7586206896551725
+
+Precision of tag CC: 1.0
+Recall of tag CC: 0.5217391304347826
+F1 of tag CC: 0.6857142857142856
+
+Precision of tag VBG: 0.9090909090909091
+Recall of tag VBG: 0.6578947368421053
+F1 of tag VBG: 0.7633587786259541
+
+Precision of tag MD: 0.6938775510204082
+Recall of tag MD: 0.7391304347826086
+F1 of tag MD: 0.7157894736842104
+
+Precision of tag VB: 0.44041450777202074
+Recall of tag VB: 0.68
+F1 of tag VB: 0.5345911949685536
+
+Precision of tag CD: 0.7176470588235294
+Recall of tag CD: 0.40131578947368424
+F1 of tag CD: 0.5147679324894515
+
+Precision of tag PRP$: 0.7941176470588235
+Recall of tag PRP$: 0.7714285714285715
+F1 of tag PRP$: 0.782608695652174
+
+Precision of tag TO: 0.36082474226804123
+Recall of tag TO: 0.3125
+F1 of tag TO: 0.33492822966507174
+
+Precision of tag :: 1.0
+Recall of tag :: 0.9375
+F1 of tag :: 0.967741935483871
+
+Precision of tag NNPS: 0.2619047619047619
+Recall of tag NNPS: 0.7586206896551724
+F1 of tag NNPS: 0.3893805309734514
+
+Precision of tag EX: 1.0
+Recall of tag EX: 0.8
+F1 of tag EX: 0.888888888888889
+
+Precision of tag POS: 0.8214285714285714
+Recall of tag POS: 0.4339622641509434
+F1 of tag POS: 0.5679012345679013
+
+Precision of tag ``: 1.0
+Recall of tag ``: 0.43243243243243246
+F1 of tag ``: 0.6037735849056604
+
+Precision of tag -LRB-: 0.008
+Recall of tag -LRB-: 1.0
+F1 of tag -LRB-: 0.015873015873015872
+
+Precision of tag -RRB-: 1.0
+Recall of tag -RRB-: 1.0
+F1 of tag -RRB-: 1.0
+
+Precision of tag WDT: 0.3333333333333333
+Recall of tag WDT: 0.45454545454545453
+F1 of tag WDT: 0.3846153846153846
+
+Precision of tag WRB: 1.0
+Recall of tag WRB: 0.35714285714285715
+F1 of tag WRB: 0.5263157894736842
+
+Precision of tag JJS: 0.8333333333333334
+Recall of tag JJS: 0.5555555555555556
+F1 of tag JJS: 0.6666666666666667
+
+Precision of tag RBR: 0.3
+Recall of tag RBR: 0.5
+F1 of tag RBR: 0.37499999999999994
+
+Precision of tag $: 1.0
+Recall of tag $: 0.8823529411764706
+F1 of tag $: 0.9375
+
+Precision of tag RP: 0.7777777777777778
+Recall of tag RP: 0.7777777777777778
+F1 of tag RP: 0.7777777777777778
+
+Precision of tag JJR: 0.6666666666666666
+Recall of tag JJR: 0.2
+F1 of tag JJR: 0.30769230769230765
+
+Precision of tag WP$: 1.0
+Recall of tag WP$: 1.0
+F1 of tag WP$: 1.0
+
+Precision of tag SYM: 0.14285714285714285
+Recall of tag SYM: 1.0
+F1 of tag SYM: 0.25
+

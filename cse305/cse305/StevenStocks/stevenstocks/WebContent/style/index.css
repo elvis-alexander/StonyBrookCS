@@ -1,0 +1,91 @@
+ html, body {
+  margin: 0px;
+}
+
+hr {
+  /*color: rgba(0, 155, 211, 0.4);*/
+  background-color: rgba(51, 51, 51, 1);
+  height: 5px;
+}
+
+
+#background-canvas {
+  display: block;
+}
+
+#welcome-header, #welcome-paragraph{
+  font-family: Patua One;
+  color: rgba(51,51,51,1);
+}
+
+.banner {
+  background-color: rgb(65, 65, 65);
+  position: absolute;
+  top: 0;
+  left:0;
+  right: 0;
+}
+
+.main-container{
+  position: absolute;
+  top: 0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(51,51,51, 0.0);
+}
+
+.chart-container{
+  display: block;
+  background-color: rgba(51,51,51, 0.0);
+  position: absolute;
+  top: 15%;
+}
+
+.login-container {
+  display: block;
+  background-color: rgba(51,51,51, 0.0);
+  position: absolute;
+  top: 15%;
+  left: 60%;
+  right: 5%;
+}
+
+.login-header {
+  font-family: Patua One;
+  color: rgba(51,51,51,1);
+  margin-left: 10%;
+}
+
+.login-field {
+  width: 50%;
+  padding: 12px 12px;  
+  font-family: Patua One;
+  font-size: 20px;
+  color: rgb(56,56,56);
+  margin-left: 10%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 10px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;  
+}
+
+.login-error{
+  color: rgba(255,0,0,1);
+}
+
+#login-button {
+  font-family: Patua One;
+  font-size: 20px;
+  margin-left: 10%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 10px;
+  width: 80px;
+  color: white;
+  background-color: rgba(0,175,94,0.9);
+  text-align: center;
+  border-radius: 10px;
+}

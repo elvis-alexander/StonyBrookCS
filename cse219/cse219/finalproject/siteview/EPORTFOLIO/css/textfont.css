@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 3, 2015, 10:26:04 PM
+    Author     : eafernandez
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Arvo);
+
+
+/*HEADER FONTS BY CLASS*/
+p.Montserrat {
+    font-family: Montserrat;    
+}
+p.Oswald {
+    font-family: Oswald;    
+}
+p.Lobster {
+    font-family: Lobster;    
+}
+p.Merriweather {
+    font-family: Merriweather;    
+}
+p.Arvo {
+    font-family: Arvo;    
+}
+
+/*HEADER FONTS BY CLASS*/
+li.Montserrat {
+    font-family: Montserrat;    
+}
+li.Oswald {
+    font-family: Oswald;    
+}
+li.Lobster {
+    font-family: Lobster;    
+}
+li.Merriweather {
+    font-family: Merriweather;    
+}
+li.Arvo {
+    font-family: Arvo;    
+}
+
+/*HEADER FONTS BY CLASS*/
+h1.Montserrat {
+    font-family: Montserrat;    
+}
+
+h1.Oswald {
+    font-family: Oswald;    
+}
+
+h1.Lobster {
+    font-family: Lobster;    
+}
+
+h1.Merriweather {
+    font-family: Merriweather;    
+}
+
+h1.Arvo {
+    font-family: Arvo;    
+}
+
+p {
+     word-wrap: break-word;
+}
+
+h1 {
+     word-wrap: break-word;
+}
+
+li {
+     word-wrap: break-word;
+}
+

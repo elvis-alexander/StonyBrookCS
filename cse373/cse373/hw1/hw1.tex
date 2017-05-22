@@ -1,0 +1,170 @@
+\documentclass{article}
+\title{CSE 373 Hw 1}
+\author{Elvis Fernandez}
+\date{February 14, 2016}
+
+\begin{document}
+\maketitle
+\paragraph{1). Big-O Notation}
+Prove each of the following using the definition of big-O notation (find constants c and 
+\begin{math}
+n_{o}\end{math} such that 
+\begin{math} 
+f(n) \leq c * g(n)
+\end{math}
+for
+\begin{math}
+n > n_{0}
+\end{math}
+\begin{itemize}
+	\item
+	\begin{math}3n^{3} + 9n^{2} + n + 1 = O(n^{3})\end{math}
+\end{itemize}
+
+\begin{center}
+		make n = 1,000 and c = 4\\
+		\begin{math}3(1000)^{3} + 9(1000)^{2} + (1000) + 1 = 4 * O((1000)^{3})
+		\end{math}
+		\begin{math}
+		3000000000+9000000+1000+1 \leq 4*1000000000 \end{math}
+		\\
+		\begin{math}
+			3009 001001 \leq 4000000000
+		\end{math}	
+\end{center}
+
+
+\begin{itemize}
+	\item
+	\begin{math}5nlog_{2}n + 8n - 200 = O(nlog_{2}n)\end{math}
+	\begin{center}
+		make c = 10 and n = 1024
+	\begin{math}
+		5*1024*log_{2}(1024) + 8(1024) - 200 = 10(1024(log_{2}(1024)))		
+	\end{math}
+	\begin{math}
+		51200 + 8192 - 200 \leq 102400
+	\end{math}
+	\\
+	\begin{math}
+		59192 \leq 102400
+	\end{math}
+		
+	\end{center}
+\end{itemize}
+
+
+\paragraph{2). More Big-O}
+Order the following by their growth rates from smallest to largest.
+\begin{enumerate}
+\item\begin{math}
+	O(n^{1.9})
+\end{math}
+
+\item\begin{math}
+O(n^{3})
+\end{math}
+
+\item\begin{math}
+O(log n)
+\end{math}
+
+\item\begin{math}
+O(n)
+\end{math}
+
+\item\begin{math}
+O(n^{n})
+\end{math}
+
+\item\begin{math}
+O(\sqrt{n})
+\end{math}
+
+\item\begin{math}
+O(2^{n})
+\end{math}
+
+\item\begin{math}
+O(n!)
+\end{math}
+
+\item\begin{math}
+O(n log n)\\\\
+\end{math}
+\end{enumerate}
+
+\textbf{Solution:} \begin{center}
+	\begin{math}O(log n)\end{math}, 
+	\begin{math}O(\sqrt{n})\end{math}, 
+	\begin{math}O(n)\end{math}
+	
+	\begin{math}O(n log n)\end{math}, 
+	\begin{math}O(n^{1.9})\end{math}, 
+	\begin{math}O(n^{3})\end{math}
+	
+	\begin{math}O(2^{n})\end{math}, 
+	\begin{math}O(n!)\end{math}, 
+	\begin{math}O(n^{n})\end{math}\end{center}
+
+
+
+\paragraph{5). Recurrences}
+Solve the following recurrences. Assume \begin{math}
+T(n) \leq c
+\end{math} 
+for some constant c and for all 
+\begin{math}
+n \leq 10.
+\end{math}
+\begin{itemize}
+	\item
+	\begin{math}2T(\frac{n}{4}) + n^{0.3}\end{math}
+\end{itemize}
+Let t = 0.3\\\\
+\begin{math}
+	T(n) = 2T(\frac{n}{4}) + n^{t}\\\\
+	T(n/4) = 2T(\frac{n}{4^{2}}) + (\frac{n}{4})^{t}\\\\
+	T(n/4^{2}) = 2T(\frac{n}{4^{3}}) + ({\frac{n}{4^2}}) ^{t}\\\\
+	T(n) = 2T(\frac{n}{4}) + n^{t} \end{math}
+
+	\underline{for i = 1}\\\\
+\begin{math}
+	T(n) = 2[2T(\frac{n}{4^{2}}) + (\frac{n}{4})^{t}] + n^{t}\\\\
+	T(n) = 2^{2}T(\frac{n}{4^{2}}) + \frac{2}{4^{t}}n^{t}\end{math}
+	\underline{for i = 2}\\\\
+\begin{math}
+	T(n) = 2^{2}[2T(\frac{n}{4^{3}}) + (\frac{n}{4^{2}}) ^ {t}]  + (\frac{2}{4^{t}})n^{t} + n^{t}\\\\
+	T(n) = 2^{3}T(\frac{n}{4^{3}}) + (\frac{2}{4^{t}})^{2}n^{t} + (\frac{2}{4^{t}})n^{t} + n^{t}\end{math}
+	\underline{for i = 3}\\\\
+***Using the geometric series***\\\\
+\begin{math}
+	T(n) = 2^{i}T(\frac{n}{4^{i}}) + (\frac{1 - (\frac{2}{4^t})^{i}}{1 - (\frac{2}{4^{t}})})n^{t}
+\end{math}\\\\
+Since "t" is a constant
+\begin{math}
+	c1 = \frac{1}{1 - (\frac{2}{4^{t}})}\\\\
+	T(n) \leq 2^{i}T(\frac{n}{4^{i}}) + c1(1 - (\frac{2}{4^{t}}) ^ {i})n^{t}\\\\
+	T(n) = 2^{i}T(\frac{n}{4^{i}}) + c1n^{t} - c1(\frac{2}{4^{t}})^{i}n^{t}\\\\
+	= \frac{n}{4^{i}} = 1; n = 4^{i}; i = log_{4}n\\\\
+	= 2^{i}T(\frac{n}{4^{i}}) + c1n^{t} - c1(\frac{2}{4^{t}})^{i}n^{t}\\\\
+	= 2^{log_{4}n}T(\frac{4^{i}}{4^{i}}) + c1n^{t} - c1(\frac{2}{4^{t}})^{log_{4}n}n^{t}\\\\
+	= c*2^{log_{4}n} + c1n^{t} - c1(\frac{2}{4^{t}})^{log_{4}n}n^{t}\\\\
+	\leq c*2^{log_{4}n}+c1n^{t} - c1(\frac{2^{log_{4}n}}{4^{tlog_{4}n}})n^{t}\\\\
+	\leq c*2^{log_{4}n}+c1n^{t} - c1(\frac{2^{log_{4}n}}{n^{t}})n^{t}\\\\
+	\leq c*2^{log_{4}n}+c1n^{t} - c1(2^{log_{4}n})\\\\
+	\leq (c - c1)2^{log_{4}n} + c1n^{t}\\\\
+	Since: \space2^{log_{4}n} = (n^{log_{n}2})^{log_{4}n} = n ^ {log_{n}2 * log_{4}n} = n^{log_{4}2}\\\\
+	T(n) \leq (c - c1)n^{log_{4}2} + c1n^{t}\\\\
+	{log_{4}2} \geq t \\\\
+	thus: \space T(n) = O(n^{log_{4}2})
+\end{math}
+
+\paragraph{7). Partition}
+The following array has been partitioned. Which elements could have been the pivot
+value?
+\begin{center}
+	[16, 25, 8, 40, 32, 42, 55, 67, 59, 73]
+\end{center}
+\textbf{Solution:} In a partition, all values less than the pivot are located on one side of the pivot value (in any order) and all the values greater than the pivot are on the opposite side (to the right).  With this constraint the only possible values that could have been pivot values are 42, 55 and 73
+\end{document}

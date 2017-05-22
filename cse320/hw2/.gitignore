@@ -1,0 +1,6 @@
+gitp.sh
+*.swp
+*~
+bin/
+build/
+utility/*.class

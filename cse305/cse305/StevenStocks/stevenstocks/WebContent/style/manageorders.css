@@ -1,0 +1,114 @@
+@CHARSET "ISO-8859-1";
+
+#order-container {
+    height: 300px;
+    width: 100%;
+   	padding: 0;
+}
+
+#order-table-header{
+	height: 75px;
+    width: 100%;
+   	padding: 0;
+   	padding-left: 15px;
+}
+
+#order-table-header  h1{
+	font-family: Patua One;
+	font-size: 24pt;
+	color: rgba(51,51,51, 0.9);
+}
+
+#order-table-header div.col{
+	float: left;	
+    width: 20%;
+}
+
+.order-info-container{
+	height: 100px;
+	float: left;
+    width: 100%;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+input[type=text]{
+	margin-top: 8px;
+	margin-right: 20px;
+	float:right;
+	font-family: Patua One;
+	font-size: 16pt;
+	text-decoration: none;
+	padding: 2px;
+}
+
+#heading-container #search-label{
+	float:right;
+	margin-right: 20px;
+	font-family: Patua One;
+	font-size: 14pt;
+	color: rgba(51,51,51, 0.9);
+}
+
+#search-button{
+	float: right;
+	font-family: Patua One;
+	font-size: 12pt;
+	text-decoration: none;
+	padding: 10px;
+	color: white;
+	border-radius: 10px;
+}
+
+#search-button{
+	background-color: rgba(0,175,94,.9);
+}
+
+.order-info-container h1{
+	font-family: Patua One;
+	font-size: 12pt;
+	color: rgba(51,51,51, 0.9);
+}
+
+.order-info-container h1.order-number {
+	font-family: Patua One;
+	font-size: 24pt;
+	letter-spacing: 2px;
+	color: rgba(51,51,51, 0.9);
+}
+
+.order-info-container div.col{
+	float: left;	
+    width: 20%;
+}
+
+.order-info-container:hover{
+	background-color: rgba(0,175,94,0.5);
+ 	border-radius: 5px;
+}
+
+.filter{
+	padding: 12px 12px;  
+	font-family: Patua One;
+	font-size: 16px;
+	color: rgb(56,56,56);
+	margin-right: 20px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 10px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;
+	display: inline-block;
+  	float: right;
+  	width: 150px  
+}
+
+.no-orders{
+	font-family: Patua One;
+	font-size: 24pt;
+	letter-spacing: 2px;
+	color: red;
+}

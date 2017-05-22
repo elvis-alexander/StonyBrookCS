@@ -1,0 +1,41 @@
+Test,Status,Points,Max,Message
+Malloc_a_7737,PASSED,3,3,
+Malloc_a_Double,PASSED,2,2,
+Coalesce_free_block_before,PASSED,3,3,
+Realloc_size_zero_expect_NULL,FAILED,0,3,['Realloc_size_zero_expect_NULL.c:33: Errno was not set']
+Realloc_Payload_Integrity_And_Moved,ERRORED,0,3,['The test crashed.']
+Realloc_Both_Extend_In_Place_And_Move,ERRORED,0,3,['The test crashed.']
+Info_count_coalesces,PASSED,1,1,
+Malloc_a_Short,PASSED,2,2,
+Realloc_larger_fits_contiguous_absorb_splinter,FAILED,0,3,['Realloc_larger_fits_contiguous_absorb_splinter.c:40: Block was moved']
+Malloc_four_pages,FAILED,0,3,"['Malloc_four_pages.c:37: Incorrect block size of one whole page in footer, Actual: 0, EXPECTED: 16384']"
+Info_count_internal,FAILED,0,1,"['Info_count_internal.c:41: Info had incorrect values, 18, EXPECTED: 38']"
+Realloc_larger_must_move,PASSED,3,3,
+External_fragmentation_ask_sf_sbrk_for_more_space,FAILED,0,3,"['External_fragmentation_ask_sf_sbrk_for_more_space.c:37: Incorrect freelist_head block size, Actual: 4032, EXPECTED: 4064']"
+ManagingMemory_consecutive_list,PASSED,3,3,
+Free_block_check_header_footer_values,PASSED,2,2,
+Free_Coalesce_Forward_2_Times,PASSED,3,3,
+Realloc_smaller_size_ptr_should_not_move,FAILED,0,3,['Realloc_smaller_size_ptr_should_not_move.c:32: sf_realloc to smaller size moved payload']
+Info_count_allocations,PASSED,1,1,
+Malloc_a_Char,PASSED,2,2,
+Realloc_larger_fits_contiguous,FAILED,0,3,['Realloc_larger_fits_contiguous.c:32: Moved payload even though free memory existed directly after']
+StressTest,ERRORED,0,3,['The test crashed.']
+Info_Malloc_And_Free,FAILED,0,3,"['Info_Malloc_And_Free.c:49: Incorrect block size, Actual: 48, EXPECTED: 64']"
+Malloc_Whole_First_Page_Multiple_Times,FAILED,0,3,['Malloc_Whole_First_Page_Multiple_Times.c:34: The expression freelist_head == ((void *)0) is false.']
+Malloc_four_pages_across_multiple_mallocs_then_frees_all,TIMEOUT,0,3,TIMEOUT
+Malloc_a_LongDouble,PASSED,2,2,
+Check_next_prev_pointers_of_free_block_at_head_of_list_3FreeBlocks,PASSED,2,2,
+Malloc_three_pages,FAILED,0,3,"['Malloc_three_pages.c:37: Incorrect block size of one whole page in footer, Actual: 0, EXPECTED: 12288']"
+Malloc_one_page,FAILED,0,3,"['Malloc_one_page.c:37: Incorrect block size of one whole page in footer, Actual: 0, EXPECTED: 4096']"
+Coalesce_free_block_after,PASSED,3,3,
+Malloc_an_Integer,PASSED,2,2,
+Coalesce_no_coalescing,PASSED,2,2,
+Splitting,PASSED,3,3,
+Info_count_frees,PASSED,1,1,
+Malloc_two_pages,FAILED,0,3,"['Malloc_two_pages.c:37: Incorrect block size of one whole page in footer, Actual: 0, EXPECTED: 8192']"
+Malloc_773_Bytes,PASSED,2,2,
+Coalesce_free_before_and_after,PASSED,3,3,
+Check_next_prev_pointers_of_free_block_at_head_of_list_BaseCase,PASSED,2,2,
+Splinter,FAILED,0,3,"['Splinter.c:42: 48 byte block was splintered, Actual: 32, EXPECTED: 48']"
+Info_count_external,FAILED,0,1,"['Info_count_external.c:41: Info had incorrect values, 0, EXPECTED: 3712']"
+Required Unit Tests,Counted,0,3,Unittests

@@ -1,0 +1,161 @@
+@CHARSET "ISO-8859-1";
+
+#stock-container {
+    height: 300px;
+    width: 100%;
+   	padding: 0;
+}
+
+#stock-table-header{
+	height: 75px;
+    width: 100%;
+   	padding: 0;
+   	padding-left: 15px;
+}
+
+#stock-table-header  h1{
+	font-family: Patua One;
+	font-size: 24pt;
+	color: rgba(51,51,51, 0.9);
+}
+
+#stock-table-header div.col{
+	float: left;	
+    width: 15%;
+}
+
+.stock-info-container{
+	height: 100px;
+	float: left;
+    width: 100%;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#stock-container-2 {
+    height: 300px;
+    width: 100%;
+   	padding: 0;
+}
+
+.stock-info-container-2{
+	height: 150px;
+	float: left;
+    width: 100%;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+input[type=text]{
+	margin-top: 8px;
+	margin-right: 20px;
+	float:right;
+	font-family: Patua One;
+	font-size: 16pt;
+	text-decoration: none;
+	padding: 2px;
+}
+
+#heading-container #search-label{
+	float:right;
+	margin-right: 20px;
+	font-family: Patua One;
+	font-size: 14pt;
+	color: rgba(51,51,51, 0.9);
+}
+
+#search-button{
+	float: right;
+	font-family: Patua One;
+	font-size: 12pt;
+	text-decoration: none;
+	padding: 10px;
+	margin-right: 130px;
+	color: white;
+	background-color: rgba(71,71,71,.8);
+	border-radius: 10px;
+}
+
+#search-button{
+	background-color: rgba(0,175,94,.9);
+}
+
+.stock-info-container h1{
+	font-family: Patua One;
+	font-size: 12pt;
+	color: rgba(51,51,51, 0.9);
+}
+
+.stock-info-container-2 h1{
+	font-family: Patua One;
+	font-size: 12pt;
+	color: rgba(51,51,51, 0.9);
+}
+
+.stock-info-container h1.stock-symbol {
+	font-family: Patua One;
+	font-size: 24pt;
+	color: rgba(51,51,51, 0.9);
+}
+
+.stock-info-container-2 h1.stock-symbol {
+	font-family: Patua One;
+	font-size: 24pt;
+	color: rgba(51,51,51, 0.9);
+}
+
+.stock-info-container div.col{
+	float: left;	
+    width: 15%;
+}
+
+.stock-info-container-2 div.col{
+	float: left;	
+    width: 15%;
+}
+
+.stock-info-container:hover{
+	background-color: rgba(0,175,94,0.5);
+ 	border-radius: 5px;
+}
+
+.stock-info-container-2:hover{
+	background-color: rgba(0,175,94,0.5);
+ 	border-radius: 5px;
+}
+
+.filter{
+	padding: 12px 12px;  
+	font-family: Patua One;
+	font-size: 16px;
+	color: rgb(51,51,51);
+	margin-right: 20px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 10px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;
+	display: inline-block;
+  	float: right;
+  	width: 150px  
+}
+
+.holding-header{
+	font-family: Patua One;
+	font-size: 24px;
+	color: rgb(51,51,51);
+	//float:left;
+}
+
+.no-stocks{
+	font-family: Patua One;
+	font-size: 24pt;
+	letter-spacing: 2px;
+	color:red;
+	//color: rgba(51,51,51, 0.9);
+}

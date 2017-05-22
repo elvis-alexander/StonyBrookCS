@@ -1,0 +1,40 @@
+/* Set black background color, white text and some padding */
+footer {
+	background-color: #555;
+	color: white;
+	padding: 5px;
+	text-align: center;
+	position: fixed;
+	bottom:0px;
+	width:100%;
+}
+
+
+
+/*body {
+	font-family: "Lato", sans-serif;
+}
+div{
+	font-weight: bold;
+}
+
+input[type=submit]{
+	background-color: #008CBA;
+}*/
+
+
+/*#leftContainer{
+	float:left;
+	height: 100%;
+	width:50%;
+}
+
+#rightContainer{
+	float:left;
+	height: 100%;
+	width:50%;
+}*/
+/*
+li{
+	list-style-type: none;
+}*/

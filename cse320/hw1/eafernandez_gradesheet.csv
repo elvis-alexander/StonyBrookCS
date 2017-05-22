@@ -1,0 +1,270 @@
+Testcase,Points,Notes,Description
+Build Program,,"Build Success
+",Check if the file was built according to specification.
+Validate-Args-Test-01,1,,"Invalid arguments test.
+Args: bin/mapreduce
+Expected Return Value: -1
+Max Pts: 1"
+Validate-Args-Test-02,0,"Error: Invalid return value.
+","Invalid arguments test.
+Args: bin/mapreduce -v
+Expected Return Value: -1
+Max Pts: 1"
+Validate-Args-Test-03,0,"Error: Invalid return value.
+","Invalid arguments test.
+Args: bin/mapreduce -x ana ../gdata/testfiles/ana/n_small
+Expected Return Value: -1
+Max Pts: 1"
+Validate-Args-Test-04,0,"Error: Invalid return value.
+","Invalid arguments test.
+Args: bin/mapreduce func invalid_dir
+Expected Return Value: -1
+Max Pts: 1"
+Validate-Args-Test-05,0,"Error: Invalid return value.
+","Invalid arguments test.
+Args: bin/mapreduce -v func ../gdata/testfiles/ana/n_small
+Expected Return Value: -1
+Max Pts: 1"
+Validate-Args-Test-06,0,"Error: Invalid return value.
+","Invalid arguments test.
+Args: bin/mapreduce -v ana ../gdata/testfiles/ana/n_small blah blah
+Expected Return Value: -1
+Max Pts: 1"
+Validate-Args-Test-07,0,"Error: Invalid return value.
+","Invalid arguments test.
+Args: bin/mapreduce -v ana invalid_dir
+Expected Return Value: -1
+Max Pts: 1"
+Validate-Args-Test-08,1,"Usage:  ./mapreduce [h|v] FUNC DIR
+        FUNC    Which operation you would like to run on the data:
+                ana - Analysis of various text files in a directory.
+                stats - Calculates stats on files which contain only numbers.
+        DIR     The directory in which thße files are located.
+
+        Options:
+        -h      Prints this help menu.
+        -v      Prints the map function’s results, stating the file it’s from.
+","Valid arguments test.
+Args: bin/mapreduce -h
+Expected Return Value: 0
+Max Pts: 1"
+Validate-Args-Test-09,1,"Usage:  ./mapreduce [h|v] FUNC DIR
+        FUNC    Which operation you would like to run on the data:
+                ana - Analysis of various text files in a directory.
+                stats - Calculates stats on files which contain only numbers.
+        DIR     The directory in which thße files are located.
+
+        Options:
+        -h      Prints this help menu.
+        -v      Prints the map function’s results, stating the file it’s from.
+","Valid arguments test.
+Args: bin/mapreduce -h ana ../gdata/testfiles/ana/n_small
+Expected Return Value: 0
+Max Pts: 1"
+Validate-Args-Test-10,1,"Usage:  ./mapreduce [h|v] FUNC DIR
+        FUNC    Which operation you would like to run on the data:
+                ana - Analysis of various text files in a directory.
+                stats - Calculates stats on files which contain only numbers.
+        DIR     The directory in which thße files are located.
+
+        Options:
+        -h      Prints this help menu.
+        -v      Prints the map function’s results, stating the file it’s from.
+","Valid arguments test.
+Args: bin/mapreduce -h -v ana ../gdata/testfiles/ana/n_small
+Expected Return Value: 0
+Max Pts: 1"
+Validate-Args-Test-11,1,"Usage:  ./mapreduce [h|v] FUNC DIR
+        FUNC    Which operation you would like to run on the data:
+                ana - Analysis of various text files in a directory.
+                stats - Calculates stats on files which contain only numbers.
+        DIR     The directory in which thße files are located.
+
+        Options:
+        -h      Prints this help menu.
+        -v      Prints the map function’s results, stating the file it’s from.
+","Valid arguments test.
+Args: bin/mapreduce -h func invalid_dir
+Expected Return Value: 0
+Max Pts: 1"
+Validate-Args-Test-12,1,,"Valid arguments test.
+Args: bin/mapreduce ana ../gdata/testfiles/ana/n_small
+Expected Return Value: 1
+Max Pts: 1"
+Validate-Args-Test-13,1,,"Valid arguments test.
+Args: bin/mapreduce stats ../gdata/testfiles/stats/n_small
+Expected Return Value: 2
+Max Pts: 1"
+Validate-Args-Test-14,1,,"Valid arguments test.
+Args: bin/mapreduce -v ana ../gdata/testfiles/ana/n_small
+Expected Return Value: 3
+Max Pts: 1"
+Validate-Args-Test-15,1,,"Valid arguments test.
+Args: bin/mapreduce -v stats ../gdata/testfiles/stats/n_small
+Expected Return Value: 4
+Max Pts: 1"
+NFiles-Test-01,0,"SIGSEGV: Segmentation Fault
+","Invalid directory test.
+Args: invalid_dir
+Expected Return Value: -1
+Max Pts: 2"
+NFiles-Test-02,2,,"Empty directory test.
+Args: ../gdata/testfiles/common/empty
+Expected Return Value: 0
+Max Pts: 2"
+NFiles-Test-03,2,,"Small directory test (5 entries)
+Args: ../gdata/testfiles/ana/n_small
+Expected Return Value: 5
+Max Pts: 2"
+NFiles-Test-04,2,,"Large directory test (100 entries)
+Args: ../gdata/testfiles/ana/n_large
+Expected Return Value: 100
+Max Pts: 2"
+Map-Return-Val-Test-01,2,,"Map test with act as graderfunc on 5 entry directory.
+Expected Return Value: 5
+Max Pts: 2"
+Map-Return-Val-Test-02,2,,"Map test with act as graderfunc on 100 entry directory.
+Expected Return Value: 100
+Max Pts: 2"
+Map-Return-Val-Test-03,0,"Error: Invalid return value.
+","Map test with act as graderfunc where graderfunc fails.
+Expected Return Value: -1
+Max Pts: 2"
+Analysis-Test-01,1,"Error: Incorrect pointer address.
+","Analysis on small file (10 bytes) containing 10 'a' characters.
+Expected Return Value: 10
+Max Pts: 2"
+Analysis-Test-02,1,"Error: Incorrect pointer address.
+","Analysis on large file (10000 bytes) containing 10000 'a' characters.
+Expected Return Value: 10000
+Max Pts: 2"
+Analysis-Test-03,1,"Error: Incorrect longest line number.
+","Analysis on empty file (0 bytes).
+Expected Return Value: 0
+Max Pts: 2"
+Stats-Test-01,1,"Error: Incorrect pointer address.
+","Stats on small file containing 10 1's.
+Expected Return Value: 0
+Max Pts: 2"
+Stats-Test-02,1,"Error: Incorrect pointer address.
+","Stats on small file containing 10000 1's.
+Expected Return Value: 0
+Max Pts: 2"
+Stats-Test-03,1,"Error: Incorrect pointer address.
+","Stats on empty file.
+Expected Return Value: 0
+Max Pts: 2"
+Stats-Test-04,0,"Error: Invalid return value.
+","Stats on file with bad characters.
+Expected Return Value: -1
+Max Pts: 2"
+Map-Test-01,2,,"Map run with grader analysis function on directory containing 10 files 50 bytes big.
+Expected Return Value: 500
+Max Pts: 2"
+Map-Test-02,2,,"Map run with grader analysis function on directory containing 100 files 50 bytes big.
+Expected Return Value: 5000
+Max Pts: 2"
+Map-Test-03,2,,"Map run with grader analysis function on empty directory.
+Expected Return Value: 0
+Max Pts: 2"
+Map-Test-04,2,,"Map run with grader stats function on directory containing 10 files with 50 1's.
+Expected Return Value: 0
+Max Pts: 2"
+Map-Test-05,2,,"Map run with grader stats function on directory containing 100 files with 50 1's.
+Expected Return Value: 0
+Max Pts: 2"
+Map-Test-06,2,,"Map run with grader stats function on empty directory.
+Expected Return Value: 0
+Max Pts: 2"
+Map-Test-07,0,"Error: Invalid return value.
+","Map run with grader stats function on directory containing files with bad characters.
+Expected Return Value: -1
+Max Pts: 2"
+Reduce-Test-01,2,,"Analysis: Reduce data for 100 different files (Data populated by grader map function).
+Max Pts: 2"
+Reduce-Test-02,2,,"Stats: Reduce data for 100 different files (Data populated by grader map function).
+Max Pts: 2"
+Print-Test-01,2,,"Analysis: Print an analysis struct without histogram.
+Max Pts: 2"
+Print-Test-02,2,,"Analysis: Print an analysis struct with histogram.
+Max Pts: 2"
+Print-Test-03,4,,"Stats: Print a stats struct without histogram.
+Max Pts: 4"
+Print-Test-04,4,,"Stats: Print a stats struct with histogram.
+Max Pts: 4"
+Main-Test-01,0,"SIGSEGV: Segmentation Fault
+","Student program fail test.
+Args: -v ana invalid_dir
+Expected Exit Code: 1
+Max Pts: 1.5"
+Main-Test-02,0,"Signal Number: -6
+","Student program fail test.
+Args: -v stats gdata/testfiles/stats/fail
+Expected Exit Code: 1
+Max Pts: 1.5"
+Main-Test-03,0,"SIGSEGV: Segmentation Fault
+","Student program fail test.
+Args: -v
+Expected Exit Code: 1
+Max Pts: 1.5"
+Main-Test-04,1.5,,"Student program success test.
+Args: -v ana gdata/testfiles/ana/onefile_small
+Expected Exit Code: 0
+Max Pts: 1.5"
+Main-Test-05,1.5,,"Student program success test.
+Args: -v stats gdata/testfiles/stats/onefile_small
+Expected Exit Code: 0
+Max Pts: 1.5"
+Main-Test-06,1.5,,"Student program success test.
+Args: ana gdata/testfiles/ana/files_small
+Expected Exit Code: 0
+Max Pts: 1.5"
+Main-Test-07,1.5,,"Student program success test.
+Args: stats gdata/testfiles/stats/files_small
+Expected Exit Code: 0
+Max Pts: 1.5"
+Main-Test-08,1.5,,"Student program success test.
+Args: -v ana gdata/testfiles/ana/onefile_large
+Expected Exit Code: 0
+Max Pts: 1.5"
+Main-Test-09,1.5,,"Student program success test.
+Args: -v stats gdata/testfiles/stats/onefile_large
+Expected Exit Code: 0
+Max Pts: 1.5"
+Main-Test-10,1.5,,"Student program success test.
+Args: ana gdata/testfiles/ana/files_large
+Expected Exit Code: 0
+Max Pts: 1.5"
+Main-Test-11,1.5,,"Student program success test.
+Args: stats gdata/testfiles/stats/files_large
+Expected Exit Code: 0
+Max Pts: 1.5"
+Main-Test-12,0.9375,,"Student program success test.
+Args: ana gdata/testfiles/ana/var_low
+Expected Exit Code: 0
+Max Pts: 1.5"
+Main-Test-13,0.9375,,"Student program success test.
+Args: stats gdata/testfiles/stats/var_low
+Expected Exit Code: 0
+Max Pts: 1.5"
+Main-Test-14,1.5,,"Student program success test.
+Args: ana gdata/testfiles/ana/var_high
+Expected Exit Code: 0
+Max Pts: 1.5"
+Main-Test-15,1.5,,"Student program success test.
+Args: stats gdata/testfiles/stats/var_high
+Expected Exit Code: 0
+Max Pts: 1.5"
+Main-Test-16,1.5,,"Student program success test.
+Args: ana gdata/testfiles/common/empty
+Expected Exit Code: 0
+Max Pts: 1.5"
+Main-Test-17,1.5,,"Student program success test.
+Args: stats gdata/testfiles/common/empty
+Expected Exit Code: 0
+Max Pts: 1.5"
+Main-Test-18,0.75,,"Help menu test.
+Args: -h
+Expected Exit Code: 0
+Max Pts: 1.5"
+Total,73.625/100,,

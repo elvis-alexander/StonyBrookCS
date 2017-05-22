@@ -1,0 +1,68 @@
+
+{
+    "title":"ABOUTME",
+    "name":"ELVIS",
+    "font":"Montserrat",
+    "layout":"template1",
+    "color":"bluegray",
+    "banner":{
+        "src":"./imgs/banner_def.jpg",
+        "coolpath":"imgs//banner_def.jpg",
+        "include":"yes"
+    },
+    "footer":"Footer",
+    "components":[
+        {
+            "type":"paragraph",
+            "text":"Insert Text Here",
+            "font":"Montserrat"
+        },
+        {
+            "type":"list",
+            "font":"Oswald",
+            "listitems":[
+                {
+                    "caption":"NewNewNew"
+                },
+                {
+                    "caption":"New"
+                },
+                {
+                    "caption":"NewNewNew"
+                },
+                {
+                    "caption":"NewNewNewNew"
+                }
+            ]
+        },
+        {
+            "type":"paragraph",
+            "text":"Insert Text Here",
+            "font":"Merriweather"
+        },
+        {
+            "type":"paragraph",
+            "text":"Insert Text Here",
+            "font":"Lobster"
+        },
+        {
+            "type":"paragraph",
+            "text":"Insert Text Here",
+            "font":"Arvo"
+        }
+    ],
+    "links":[
+        {
+            "src":"ABOUTME",
+            "type":"self"
+        },
+        {
+            "src":"NBA",
+            "type":"navbar"
+        },
+        {
+            "src":"ANOTHERPAGE",
+            "type":"navbar"
+        }
+    ]
+}

@@ -1,0 +1,166 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tweet Home Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/static/js/homepage.js" type="text/javascript"></script>
+  <script src="/static/js/tweetBox.js" type="text/javascript"></script>
+  <script src="/static/js/uploadForm.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="/static/css/homepage.css">
+  <link rel="stylesheet" href="/static/css/tweetBox.css">
+  <script>
+    var username = "{{username}}";
+    console.log("username set:"+username);
+  </script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Tweet</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="/profile">Search Users to follow</a></li>
+        <li><a href="/tweetsearch">Search Tweets</a></li>
+        <li><a href="/userpage">My Follow Stats</a></li>
+      </ul>
+
+
+      <!--===========================================================
+                      SEARCH BAR FORM
+    ===================================================================  -->
+      <!-- <form class="navbar-form navbar-right" role="search">
+        <div class="form-group input-group">
+          <input type="text" class="form-control" id="searchField" placeholder="Search..">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" id="searchFieldSubmit">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+      </form> -->
+
+      <!-- ==============================================================
+                       NAV BUTTONS
+    ===================================================================== -->
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a><span class="glyphicon glyphicon-user"></span> My Account</a>
+        </li>
+        <li>
+          <a href="#" id="logoutButton"><span class="glyphicon glyphicon-log-in"></span> Log Out</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col-sm-3 well">
+      <div class="well">
+        <button class="btn btn-lg"><span class="glyphicon glyphicon-user"></span></button>
+            <div class="leftcontainer">
+                <p class="text-center">
+                  <a href="/userpage"><strong>{{username}}<strong></a>
+                </p>
+                <table class="table">
+                  <tr>
+                    <td>Followers</td>
+                    <td>Following</td>
+                  </tr>
+                  <tr class = "followTableRowContainer">
+                    <a href="/userpage"><td id= "followerCount">{{follower_count}}</td></a>
+                    <a href="/userpage"><td id= "followingCount">{{following_count}}</td></a>
+                  </tr>
+                </table>
+            </div>
+      </div>
+
+      <!-- <div class="well">
+        <p><a href="#">Interests</a></p>
+        <p>
+          <span class="label label-default">News</span>
+          <span class="label label-primary">W3Schools</span>
+          <span class="label label-success">Labels</span>
+          <span class="label label-info">Football</span>
+          <span class="label label-warning">Gaming</span>
+          <span class="label label-danger">Friends</span>
+        </p>
+      </div> -->
+      <!-- <div class="alert alert-success fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <p><strong>Ey!</strong></p>
+        People are looking at your profile. Find out who.
+      </div> -->
+<!--
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p> -->
+    </div>
+
+    <div class="col-sm-9">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              <div class="tweetbox-container">
+                  <div class=" tweetbox row">
+                    <div class="col-md-10">
+                      <textarea class="form-control" id="tweetText" placeholder="What's up?" rows="1"></textarea>
+                    </div>
+                    <div class="col-md-2">
+                      <button id="postTweetButton" type="button" class="btn btn-info btn-sm">
+                        <span class="glyphicon glyphicon-comment"></span>
+                      </button>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-1">
+                        <!--  ===================================
+                                FORM UPLOAD MEDIA
+                        ==========================================-->
+                          <button class="btn btn-default btn-file" id="upload-photo-button">
+                              <span class="glyphicon glyphicon-picture"></span>
+                              <input id="upload-photo" type="file" name="photo-data" accept="image/*">
+                          </button>
+                      </div>
+                    </div>
+                    <div id="preview-image-container" class="row"></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div id="rightContainer">
+          <strong>Tweet Feed</strong>
+          <div class=" tweetFeed">
+              <ul id="tweetFeedList"></ul>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12">
+            <p>Copyright &copy; Tweet (A Twitter Clone) 2017 by Elvis Fernandez and David Lin</p>
+        </div>
+    </div>
+</footer>
+
+<style>
+  body { padding-top: 70px; }
+</style>
+</body>
+</html>

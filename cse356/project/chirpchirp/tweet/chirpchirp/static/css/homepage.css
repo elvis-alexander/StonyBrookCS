@@ -1,0 +1,70 @@
+/* Set black background color, white text and some padding */
+footer {
+	background-color: #555;
+	color: white;
+	padding: 5px;
+	text-align: center;
+	position: fixed;
+	bottom:0px;
+	width:100%;
+}
+
+
+.checkBox, .checkLabel{
+	float: left
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.preview-image{
+	max-width: 50px;
+	max-height: 50px;
+	margin-left:100px;
+	position: relative;
+}
+
+/*body {
+	font-family: "Lato", sans-serif;
+}
+div{
+	font-weight: bold;
+}
+
+input[type=submit]{
+	background-color: #008CBA;
+}*/
+
+
+/*#leftContainer{
+	float:left;
+	height: 100%;
+	width:50%;
+}
+
+#rightContainer{
+	float:left;
+	height: 100%;
+	width:50%;
+}*/
+/*
+li{
+	list-style-type: none;
+}*/

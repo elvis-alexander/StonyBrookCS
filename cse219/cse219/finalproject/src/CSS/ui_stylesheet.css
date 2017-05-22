@@ -1,0 +1,355 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 23, 2015, 6:34:49 PM
+    Author     : eafernandez
+*/
+/*http://www.onextrapixel.com/2013/10/25/40-stunning-website-designs-with-great-color-schemes/
+Josef Kjaergaard
+*/
+
+
+/*Identical Font*/
+.list_font,.slide_show_btn_pane, .paragrapgh_component, .slide, .slideshow_slide_pane, .layout_component_pane, .banner_pane, .select_color_pane, .addHeaderPane, .updateFooterPane, .updateNamePane, .updateTitlePane, .add_video_component_pane, .add_image_component_pane, .top_pane, .control_pane_btn, .empty_portfolio_label  {
+    -fx-font-family: "Fjalla One";
+}
+
+.empty_portfolio_stackpane {
+    -fx-background-color: #0FB493;
+    
+}
+
+.empty_portfolio_label {
+    -fx-font-size: 180;
+    
+}
+
+
+/*Top Pane*/
+.top_pane {
+   -fx-background-color: #1D2F3E;
+}
+
+/*FILE TOOLBAR*/
+
+/*hbox*/
+.file_toolbar {
+   -fx-padding: 10;
+   -fx-spacing: 10;
+}
+/*btn*/
+.file_toolbar_btn {
+    -fx-background-color: #0FB493;
+    -fx-text-fill: black;
+    -fx-font-size: 15;
+}
+
+/*hbox*/
+.workspace_toggle {
+   -fx-padding: 10;
+   -fx-spacing: 10;
+}
+
+/*btn*/
+.workspace_toggle_btn {
+    -fx-background-color: #0FB493;
+    -fx-text-fill: black;
+    -fx-font-size: 15;
+}
+
+/*center pane*/
+.center_pane {
+
+    -fx-background-color: #0F9FB4;
+    
+}
+
+/*ctrl pane ~ vbox*/
+.control_pane {
+    -fx-border-width:14;
+    -fx-border-color: black;//#C9E1C1;
+    -fx-border-style: solid solid solid solid;
+
+    -fx-background-color: #1D2F3E;
+    -fx-padding: 20;
+    -fx-spacing: 15;
+}
+
+/*btn*/
+.control_pane_btn {
+    -fx-width: 100;
+    -fx-background-color: #0FB493;
+    -fx-text-fill: black;
+    -fx-font-size: 17;
+}  
+/*Update Title Component-Start*/
+.updateTitlePane {
+    -fx-background-color: #0FB493;
+    -fx-font-size: 20;
+    -fx-padding: 15;
+    -fx-spacing: 35;
+}
+
+.updateTitleHeaderLabel {
+    -fx-font-size: 30;
+}
+/*Update Title Component-End*/
+
+/*Update Name Component-Start*/
+.updateNamePane {
+    -fx-background-color: #0FB493;
+    -fx-font-size: 20;
+    -fx-padding: 15;
+    -fx-spacing: 20;
+}
+
+.updateNameHeaderLabel {
+    -fx-font-size: 30;
+}
+/*Update Name Component-End*/
+
+/*Update Footer Component-Start*/
+.updateFooterPane {
+    -fx-background-color: #0FB493;
+    -fx-font-size: 20;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+}
+
+.updateFooterHeaderLabel {
+    -fx-font-size: 30;
+}
+/*Update Footer Component-End*/
+
+/*Add Header Component-Start*/
+.addHeaderPane {
+    -fx-background-color: #0FB493;
+    -fx-font-size: 20;
+    -fx-padding: 15;
+    -fx-spacing: 20;
+}
+
+.addHeaderLabel {
+    -fx-font-size: 30;
+}
+/*Add Header Component-End*/
+
+/*Select Color Component-Start*/
+.select_color_pane {
+    -fx-background-color: #0FB493;
+    -fx-font-size: 20;
+    -fx-padding: 15;
+    -fx-spacing: 20;
+}
+.select_color_pane HBox{
+    -fx-spacing: 20;
+}
+
+.select_color_label {
+    -fx-font-size: 30;
+}
+/*Select Color Component-End*/
+
+/*Banner Component-START*/
+.banner_pane {
+    -fx-spacing: 90;
+    -fx-padding: 15;
+    -fx-background-color: #0FB493;
+    -fx-font-size: 30;
+
+}
+/*Banner Component-END*/
+
+/*Layout Component-END*/
+.layout_component_pane {
+   -fx-spacing: 50;
+    -fx-padding: 30;
+    -fx-background-color: #1D2F3E;
+    -fx-font-size: 20;
+}
+.layout_component_buttonpane {
+   -fx-alignment: center;
+}
+/*Layout Component-END*/
+
+
+/*Slide Show-Slide Component-START*/
+/*.slideshow_slide_pane {
+
+}*/
+
+.page_editor_slide_show_css{
+    -fx-border-color: #0FB493;
+    -fx-border-width: 10;
+    -fx-padding: 60;
+    -fx-spacing: 30;
+}                                                               
+.page_editor_slide_show_css:hover {
+    -fx-border-color: #CCFF33 ;
+    -fx-padding: 60;
+    -fx-spacing: 30;
+}
+
+.slideshow_slide_image_attr {
+    -fx-alignment:center;
+    -fx-hgap: 8;
+    -fx-vgap: 8;
+}
+.slide {
+    -fx-border-width: 13;
+    -fx-border-color:black;
+    -fx-background-color: #0FB493;
+    -fx-font-size: 20;
+    -fx-padding: 15;
+    -fx-spacing: 20;
+    
+}
+
+/*Slide Show-Slide Component-END*/
+/* fake toolbar */
+.e {
+    -fx-font-family: "Fjalla One";
+    -fx-background-color: #0FB493;
+    -fx-font-size: 28;
+}
+/* fake scroll pane */
+.main_scrollpane {
+    -fx-spacing: 40;
+    -fx-padding: 30;
+    -fx-background-color: #1D2F3E;
+}
+.slideShowComponentPane {
+    -fx-padding: 50;
+    -fx-border-width: 30;
+    -fx-border-color: blue;
+}
+
+/*.page_editor_pane_list{
+    -fx-border-color: #0FB493;
+    -fx-border-width: 10;
+}*/
+
+/*.page_editor_pane_list:hover {
+    -fx-border-color: #CCFF33 ;
+}*/
+
+/*Image Component-START*/
+.add_image_component_pane {
+    -fx-spacing: 260;
+    -fx-padding: 15;
+    -fx-background-color: #0FB493;
+
+}
+
+.add_image_component_left_vbox {
+    -fx-alignment: center;
+    -fx-spacing: 15;
+    
+}
+
+.add_image_component_left_vbox Label {
+    -fx-font-size: 22;
+
+}
+
+.add_image_component_left_vbox TextField {
+    -fx-font-size:17;
+    
+}
+
+/*Right VBox*/
+
+.add_image_component_right_vbox {    
+    -fx-alignment:center;
+    -fx-spacing: 10;
+
+}
+
+.add_image_component_right_vbox Label {
+    -fx-font-size: 22;
+
+}
+
+.add_image_component_right_vbox RadioButton {
+    -fx-font-size: 16;
+    -fx-alignment: BOTTOM_CENTER;
+}
+
+.add_image_component_right_vbox RadioButton .dot {
+    -fx-mark-highlight-color: #1D2F3E;
+    -fx-mark-color: #1D2F3E ;
+}
+/*Image Component-END*/
+
+/*Video Component-START*/
+.add_video_component_pane {
+    -fx-spacing: 210;
+    -fx-padding: 15;
+    -fx-background-color: #0FB493;
+    
+}
+
+.add_video_component_left_gridpane {
+    -fx-alignment: center;
+    -fx-spacing: 20;
+    -fx-hgap: 25;
+    -fx-vgap: 25;
+}
+
+.add_video_component_left_gridpane Label {
+    -fx-font-size: 30;
+}
+
+.add_video_component_left_gridpane TextField {
+    -fx-font-size: 17;
+}
+
+.add_video_component_left_gridpane Button {
+    -fx-font-size: 17;
+}
+
+
+.add_video_component_right_vbox {
+    -fx-alignment: center;
+    -fx-spacing: 10;
+}
+
+.add_video_component_right_vbox Label{
+    -fx-font-size: 22;
+}
+
+.add_video_component_right_vbox TextField {
+    -fx-font-size:17;
+    
+}
+
+/*Video Component-END*/
+
+.remove_component {
+    -fx-font-size: 20;
+}
+
+.selected {
+    -fx-border-width: 8;
+    -fx-border-color: blue;
+}
+
+.paragrapgh_component {
+    -fx-background-color: #0FB493;
+    -fx-padding: 40;
+    -fx-font-size: 20;
+    -fx-spacing: 80;
+}
+
+
+.slide_show_btn_pane {
+    -fx-width: 100;
+    -fx-background-color: #0FB493;
+    -fx-text-fill: black;
+    -fx-font-size: 17;
+    -fx-padding: 15;
+    -fx-spacing: 15;
+}

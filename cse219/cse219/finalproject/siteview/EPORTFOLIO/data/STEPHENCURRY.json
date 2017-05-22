@@ -1,0 +1,41 @@
+
+{
+    "title":"STEPHENCURRY",
+    "name":"EPORTFOLIO",
+    "font":"Montserrat",
+    "layout":"template4",
+    "color":"bluegray",
+    "banner":{
+        "src":"./imgs/banner_def.jpg",
+        "coolpath":"imgs//banner_def.jpg",
+        "include":"yes"
+    },
+    "footer":"Footer",
+    "components":[
+        {
+            "type":"slideshow",
+            "slidelist":[
+                {
+                    "src":"./imgs/default_ss.png",
+                    "caption":"Caption",
+                    "width":"250",
+                    "height":"200",
+                    "coolpath":"imgs//default_ss.png"
+                },
+                {
+                    "src":"\\\\files\\UndergradHome\\eafernandez\\Desktop\\dallas.png",
+                    "caption":"Caption",
+                    "width":"250",
+                    "height":"200",
+                    "coolpath":"dallas.png"
+                }
+            ]
+        }
+    ],
+    "links":[
+        {
+            "src":"STEPHENCURRY",
+            "type":"self"
+        }
+    ]
+}

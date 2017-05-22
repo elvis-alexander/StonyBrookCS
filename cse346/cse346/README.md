@@ -1,0 +1,8 @@
+Project 1:
+In this project you will write a program to produce a discrete event simulation of a switching element with 10 inputs and 3 outputs as shown in Fig. 1. Time is slotted on all inputs and outputs. Each input packet follows a Bernoulli process. In a given slot the independent probability that a packet arrives in a slot is p and the probability that a slot is empty is (1– p). One packet fills one slot.
+For a switching element if three or less packets arrives to some inputs, they are forwarded to the switching element outputs without a loss. If more than three packets arrive to the inputs of the switching element, only three packets are randomly chosen to be forwarded to the switching element outputs and the remaining ones are discarded.  
+In your discrete event simulation the program will mimic the operation of the switch and collect statistics. That is, in each time slot the program randomly generates packets for all inputs of the switching element and counts how many packets can be passed to the output of the switching element (causing throughput) and, alternatively counts how many packets are dropped (when the switching element has more than three input packets at a given time slot) . 
+Your task is to collect throughput statistics for different values of p (p = 0.02, 0.04 up to 1.0 in steps of 0.02), by running the procedure described above for each value of p and for many slots (at least a thousand slots per value of p). The more simulated slots, the more accurate the results will be. Based on this statistics, plot two graphs: 1) the average number of busy outputs versus p, and 2) the average number of dropped packets versus p.  If you also plot the model equation curves, you will receive extra credit.
+
+Project 2:
+

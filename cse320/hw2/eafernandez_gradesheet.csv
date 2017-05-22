@@ -1,0 +1,188 @@
+Testcase,Points,Notes,Description
+"*****Your makefile does not generate the bin/build directories*****
+","directories*****
+",,*****Your makefile does not generate the
+"Surrogates.txt: Program successfully converted UTF-16LE to UTF-16LE - 1
+","1
+",,Surrogates.txt: Program successfully converted UTF-16LE to UTF-16LE
+"Surrogates.txt: Program successfully converted UTF-16BE to UTF-16BE - 1
+","1
+",,Surrogates.txt: Program successfully converted UTF-16BE to UTF-16BE
+"ASCII.txt: Program successfully converted UTF-16LE to UTF-16BE - 1
+","1
+",,ASCII.txt: Program successfully converted UTF-16LE to UTF-16BE
+"Nonsurrogates.txt: Program successfully converted UTF-16LE to UTF-16BE - 1
+","1
+",,Nonsurrogates.txt: Program successfully converted UTF-16LE to UTF-16BE
+"Mixed.txt: Program successfully converted UTF-16LE to UTF-16BE - 1
+","1
+",,Mixed.txt: Program successfully converted UTF-16LE to UTF-16BE
+"Surrogates.txt: Program successfully converted UTF-16LE to UTF-16BE - 1
+","1
+",,Surrogates.txt: Program successfully converted UTF-16LE to UTF-16BE
+"ASCII.txt: Program successfully converted UTF-16BE to UTF-16LE - 1
+","1
+",,ASCII.txt: Program successfully converted UTF-16BE to UTF-16LE
+"Nonsurrogates.txt: Program successfully converted UTF-16BE to UTF-16LE - 1
+","1
+",,Nonsurrogates.txt: Program successfully converted UTF-16BE to UTF-16LE
+"Mixed.txt: Program successfully converted UTF-16BE to UTF-16LE - 1
+","1
+",,Mixed.txt: Program successfully converted UTF-16BE to UTF-16LE
+"Surrogates.txt: Program successfully converted UTF-16BE to UTF-16LE - 1
+","1
+",,Surrogates.txt: Program successfully converted UTF-16BE to UTF-16LE
+"ASCII.txt: Program successfully converted UTF-8 to UTF-16LE - 2.5
+","2.5
+",,ASCII.txt: Program successfully converted UTF-8 to UTF-16LE
+"Nonsurrogates.txt: Program successfully converted UTF-8 to UTF-16LE - 2.5
+","2.5
+",,Nonsurrogates.txt: Program successfully converted UTF-8 to UTF-16LE
+"Mixed.txt: Program successfully converted UTF-8 to UTF-16LE - 2.5
+","2.5
+",,Mixed.txt: Program successfully converted UTF-8 to UTF-16LE
+"ASCII.txt: Program successfully converted UTF-8 to UTF-16BE - 2.5
+","2.5
+",,ASCII.txt: Program successfully converted UTF-8 to UTF-16BE
+"Nonsurrogates.txt: Program successfully converted UTF-8 to UTF-16BE - 2.5
+","2.5
+",,Nonsurrogates.txt: Program successfully converted UTF-8 to UTF-16BE
+"Mixed.txt: Program successfully converted UTF-8 to UTF-16BE - 2.5
+","2.5
+",,Mixed.txt: Program successfully converted UTF-8 to UTF-16BE
+"Correct -h output - 2
+","2
+",,Correct -h output
+"Correct --help output - 2
+","2
+",,Correct --help output
+"Correct valid --UTF handling - 2
+","2
+",,Correct valid --UTF handling
+"Correct invalid --UTF handling - 2
+","2
+",,Correct invalid --UTF handling
+"Correct handling of correct mixed arguments (-u 16LE --help ...) - 2
+","2
+",,Correct handling of correct mixed arguments (-u 16LE --help ...)
+"Correct handling of incorrect mixed arguments (-u --help 16LE ...) - 2
+","2
+",,Correct handling of incorrect mixed arguments (-u --help 16LE ...)
+"Correct difference between -v and -vv - 2
+","2
+",,Correct difference between -v and -vv
+"Incorrect filesize - 0
+","0
+",,Incorrect filesize
+"Correct filepath - 1
+","1
+",,Correct filepath
+"Correct input encoding - 1
+","1
+",,Correct input encoding
+"Correct output encoding - 1
+","1
+",,Correct output encoding
+"Correct hostmachine - 1
+","1
+",,Correct hostmachine
+"Correct operating system - 1
+","1
+",,Correct operating system
+"Incorrect ASCII percentage - 0
+","0
+",,Incorrect ASCII percentage
+"Incorrect surrogate percentage - 0
+","0
+",,Incorrect surrogate percentage
+"Incorrect glyph count - 0
+","0
+",,Incorrect glyph count
+"Correct timing - 3
+","3
+",,Correct timing
+"Correct rtn. code of nonexistent file - 2
+","2
+",,Correct rtn. code of nonexistent file
+"Correct rtn. code of identical input and output file - 2
+","2
+",,Correct rtn. code of identical input and output file
+"Correct rtn. code of empty file - 2
+","2
+",,Correct rtn. code of empty file
+"Incorrect rtn. code/output of preexisting file - 0
+","0
+",,Incorrect rtn. code/output of preexisting file
+"Correct rtn. code of symbolic file - 2
+","2
+",,Correct rtn. code of symbolic file
+"Incorrect rtn. code of mismatched output encodings for preexisting file - 0
+","0
+",,Incorrect rtn. code of mismatched output encodings for preexisting file
+"Program supports OUT_FILE - 4
+","4
+",,Program supports OUT_FILE
+"make debug 
+","
+",,make
+"Makefile does not support make debug - 0
+","0
+",,Makefile does not support make debug
+"Valgrind reported open file descriptors at exit - 0
+","0
+",,Valgrind reported open file descriptors at exit
+"No memory errors or warnings (free, still reachable, etc) - 2
+","2
+",,"No memory errors or warnings (free, still reachable, etc)"
+"No valgrind errors - 2
+","2
+",,No valgrind errors
+"*****Your makefile does not generate the bin/build directories*****
+","directories*****
+",,*****Your makefile does not generate the
+"Program Successfully Compiles - 2
+","2
+",,Program Successfully Compiles
+"ASCII.txt: Program successfully converted UTF-16LE to UTF-16BE - 1
+","1
+",,ASCII.txt: Program successfully converted UTF-16LE to UTF-16BE
+"Nonsurrogates.txt: Program successfully converted UTF-16LE to UTF-16BE - 1
+","1
+",,Nonsurrogates.txt: Program successfully converted UTF-16LE to UTF-16BE
+"Mixed.txt: Program successfully converted UTF-16LE to UTF-16BE - 1
+","1
+",,Mixed.txt: Program successfully converted UTF-16LE to UTF-16BE
+"Surrogates.txt: Program successfully converted UTF-16LE to UTF-16BE - 1
+","1
+",,Surrogates.txt: Program successfully converted UTF-16LE to UTF-16BE
+"ASCII.txt: Program successfully converted UTF-16BE to UTF-16LE - 1
+","1
+",,ASCII.txt: Program successfully converted UTF-16BE to UTF-16LE
+"Nonsurrogates.txt: Program successfully converted UTF-16BE to UTF-16LE - 1
+","1
+",,Nonsurrogates.txt: Program successfully converted UTF-16BE to UTF-16LE
+"Mixed.txt: Program successfully converted UTF-16BE to UTF-16LE - 1
+","1
+",,Mixed.txt: Program successfully converted UTF-16BE to UTF-16LE
+"Surrogates.txt: Program successfully converted UTF-16BE to UTF-16LE - 1
+","1
+",,Surrogates.txt: Program successfully converted UTF-16BE to UTF-16LE
+"ASCII.txt: Program successfully converted UTF-8 to UTF-16LE - 2.5
+","2.5
+",,ASCII.txt: Program successfully converted UTF-8 to UTF-16LE
+"Nonsurrogates.txt: Program successfully converted UTF-8 to UTF-16LE - 2.5
+","2.5
+",,Nonsurrogates.txt: Program successfully converted UTF-8 to UTF-16LE
+"Mixed.txt: Program successfully converted UTF-8 to UTF-16LE - 2.5
+","2.5
+",,Mixed.txt: Program successfully converted UTF-8 to UTF-16LE
+"ASCII.txt: Program successfully converted UTF-8 to UTF-16BE - 2.5
+","2.5
+",,ASCII.txt: Program successfully converted UTF-8 to UTF-16BE
+"Nonsurrogates.txt: Program successfully converted UTF-8 to UTF-16BE - 2.5
+","2.5
+",,Nonsurrogates.txt: Program successfully converted UTF-8 to UTF-16BE
+"Mixed.txt: Program successfully converted UTF-8 to UTF-16BE - 2.5
+","2.5
+",,Mixed.txt: Program successfully converted UTF-8 to UTF-16BE
+Total,88.0,,
